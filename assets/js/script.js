@@ -253,84 +253,84 @@ function displayDisneyQuestion {
 function displayTrekQuestion { 
     const questions = [
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Who played the original Captain Kirk?",
+            optionA: "Patrick Stewart",
+            optionB: "William Shatner",
+            optionC: "Scott Bakula",
+            optionD: "Jeffrey Hunter",
+            correctOption: "optionB"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Who played Christopher Pike in the original pilot of Star Trek?",
+            optionA: "Patrick Stewart",
+            optionB: "William Shatner",
+            optionC: "Scott Bakula",
+            optionD: "Jeffrey Hunter",
+            correctOption: "optionD"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Which Star Trek Captain had an artificial heart?",
+            optionA: "Jonathon Archer",
+            optionB: "Benjamin Sisko",
+            optionC: "Katherine Janeway",
+            optionD: "Jean Luc Picard",
+            correctOption: "optionD"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Who was the first Vulcan science aboard the Starship Enterprise?",
+            optionA: "Tuvok",
+            optionB: "Sarek",
+            optionC: "Spock",
+            optionD: "T'Pol",
+            correctOption: "optionD"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "What species was the first to discover warp drive?",
+            optionA: "Vulcans",
+            optionB: "Klingons",
+            optionC: "Humans",
+            optionD: "Borg",
+            correctOption: "optionA"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "What Star Trek actor originally devised the Klingon language?",
+            optionA: "Leonard Nimoy",
+            optionB: "James Dohann",
+            optionC: "Michael Ansara",
+            optionD: "Mark Lenard",
+            correctOption: "optionB"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "What character was adopted by the Vulcan Ambassodor Sarek?",
+            optionA: "Sylvia Tilly",
+            optionB: "Spock",
+            optionC: "Michael Burnam",
+            optionD: "Sybok",
+            correctOption: "optionC"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "What character dies on the series finale of Star Trek Enterprise?",
+            optionA: "Trip",
+            optionB: "Hoshi",
+            optionC: "Phlox",
+            optionD: "T'Pol",
+            correctOption: "optionA"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Who created the Bajoran wormhole?",
+            optionA: "The Founders",
+            optionB: "The Archones",
+            optionC: "The Elders",
+            optionD: "The Prophets",
+            correctOption: "optionD"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Which Star Trek Captain loves baseball?",
+            optionA: "Jean Luc Picard",
+            optionB: "Benjamin Sisko",
+            optionC: "James T. Kirk",
+            optionD: "Jonathon Archer",
+            correctOption: "optionB"
         }
     ]
 }
