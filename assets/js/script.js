@@ -169,84 +169,84 @@ function displayMarvelQuestion {
 function displayDisneyQuestion { 
     const questions = [
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "What year did Walt Disney World open?",
+            optionA: "1957",
+            optionB: "1969",
+            optionC: "1971",
+            optionD: "1986",
+            correctOption: "optionC"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "What planet do guests visit in Star Wars: Galaxy's Edge?",
+            optionA: "Tatoiine",
+            optionB: "Hoth",
+            optionC: "Earth",
+            optionD: "Batuu",
+            correctOption: "optionD"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "In Monster's Inc., there's nothing more toxic or deadly than what?",
+            optionA: "a human child",
+            optionB: "a dog",
+            optionC: "a cat",
+            optionD: "a door",
+            correctOption: "optionA"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "What name did Ursula go by when she took human form?",
+            optionA: "Ariel",
+            optionB: "Vanessa",
+            optionC: "Jessica",
+            optionD: "Ursula",
+            correctOption: "optionB"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "What grammy winner composed the songs on the Tarzan soundtrack?",
+            optionA: "Beyonce",
+            optionB: "Taylor Swift",
+            optionC: "Phil Collins",
+            optionD: "Lady Gaga",
+            correctOption: "optionC"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Who was experiment 626?",
+            optionA: "Stitch",
+            optionB: "Lilo",
+            optionC: "Angel",
+            optionD: "Leroy",
+            correctOption: "optionA"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Walt Disney had how many children?",
+            optionA: "4",
+            optionB: "2",
+            optionC: "3",
+            optionD: "1",
+            correctOption: "optionB"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Who said: The past can hurt. But the way I see it, you can either run from it or learn from it?",
+            optionA: "Phil",
+            optionB: "Mufasa",
+            optionC: "Grandmother Willow",
+            optionD: "Rifiki",
+            correctOption: "optionD"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "How many brother's does Prince Hans of the Southern Isles have in Frozen?",
+            optionA: "12",
+            optionB: "8",
+            optionC: "4",
+            optionD: "0",
+            correctOption: "optionA"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "How many fingers does Mickey Mouse have?",
+            optionA: "5",
+            optionB: "4",
+            optionC: "3",
+            optionD: "2",
+            correctOption: "optionB"
         }
     ]
 }
