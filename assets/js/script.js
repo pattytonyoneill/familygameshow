@@ -85,84 +85,84 @@ function displaypotterQuestion{
 function displayMarvelQuestion { 
     const questions = [
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "What was the first Marvel movie?",
+            optionA: "The Incredible Hulk",
+            optionB: "Iron Man",
+            optionC: "Thor",
+            optionD: "Captain America: The First Avenger",
+            correctOption: "optionB"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Who had a cameo in every Marvel film up to Avengers:Endgame?",
+            optionA: "Elon Musk",
+            optionB: "Ken Jeong",
+            optionC: "Jenna Coleman",
+            optionD: "Stan Lee",
+            correctOption: "optionD"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "What is Captain America's shield made out of?",
+            optionA: "Vibranium",
+            optionB: "Steel",
+            optionC: "Aluminum",
+            optionD: "Iron",
+            correctOption: "optionA"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "What is Black Widow's real name?",
+            optionA: "Yeleno Belova",
+            optionB: "Wanda Maximoff",
+            optionC: "Romanoff",
+            optionD: "Agatha Harkness",
+            correctOption: "optionC"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Where was the Soul Stone hidden in Infinity War?",
+            optionA: "Thanos",
+            optionB: "Earth",
+            optionC: "Vormir",
+            optionD: "Titan",
+            correctOption: "optionC"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Who made a cameo as Loki in the Asgardian play in Thor:Ragnorok?",
+            optionA: "Elon Musk",
+            optionB: "Ken Jeong",
+            optionC: "Stan Lee",
+            optionD: "Matt Damon",
+            correctOption: "optionD"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Who was the first actor to play James Rodes(aka War Machine) in the MCU?",
+            optionA: "Terrence Howard",
+            optionB: "Don Cheadle",
+            optionC: "Robert Downey, Jr.",
+            optionD: "None of the Above",
+            correctOption: "optionA"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "How many Infinity Stones are there?",
+            optionA: "9",
+            optionB: "5",
+            optionC: "6",
+            optionD: "4",
+            correctOption: "optionC"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Who was Tony Stark's favorite band whose songs feature in the Iron Man movies?",
+            optionA: "Queen",
+            optionB: "AC/DC",
+            optionC: "The Who",
+            optionD: "Iron Maiden",
+            correctOption: "optionB"
         }
         {
-            question: "?",
-            optionA: "",
-            optionB: "",
-            optionC: "",
-            optionD: "",
-            correctOption: ""
+            question: "Which former Batman played a  Spiderman Villain the Vulture",
+            optionA: "Robert Pattinson",
+            optionB: "Michael Keaton",
+            optionC: "Christian Bale",
+            optionD: "Ben Affleck",
+            correctOption: "optionB"
         }
     ]
 }
