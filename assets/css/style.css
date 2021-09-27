@@ -1,5 +1,5 @@
 body {
-    background-color: whitesmoke;
+    background-color: white;
     font-family: "Raleway", sans-serif;
     color: #4f4461;
     text-align: center;
@@ -8,6 +8,7 @@ body {
 /* --------- Heading */
 
 .heading {
+    color:teal;
     text-align: center;
     font-size: 2.5rem;
 }
