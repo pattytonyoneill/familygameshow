@@ -1,5 +1,4 @@
-# familygameshow
-# Archeology Company Website
+# Family Game Show
 
 ## User Stories:
 - _First time Visitor Goals_
@@ -15,20 +14,20 @@
 
 - _HTML_
 - _CSS_
--_JavaScript_
+- _JavaScript_
 
 ## Frameworks, Libraries & Programs Used:
 
-- [Google Fonts](https://fonts.google.com/):_ used to import Irish Grover and Rock Salt into the style.css file which is used on all the pages of the project
-- [Font Awesome](https://fontawesome.com/): used on all the pages of the website to add icons to make the page look astheticly pleasing
+- [Google Fonts](https://fonts.google.com/):_ 
+- [Font Awesome](https://fontawesome.com/): 
 - [Git](https://git-scm.com): used to utilize the Gitpod terminal to commit to Git and Push to GitHub
 - [GitHub](https://github.com/): used to store project code after being pushed from Git
 - [Balsamiq](https://balsamiq.com/) Used to create the wire frame for the project during the planning phase
-- [ColorSpace](https://mycolor.space) Used to help client choose colors that they preferred for website 
-- [ImageColorPicker](https://imagecolorpicker.com/en/user/shared-palette?id=308363078299288132): Used to help client choose background colors for the website 
+- [ColorSpace](https://mycolor.space) 
+- [ImageColorPicker](https://imagecolorpicker.com/en/user/shared-palette?id=308363078299288132): 
 - [Am I Responsive?](http://ami.responsivedesign.is/)
 
-- _W3C Markup Validator Results _- 
+- _W3C Markup Validator Results_ - 
   - 
 
 - _Jigsaw Validator Results_
@@ -70,7 +69,8 @@
   
 ## Future Additions to page
 
-- 
+- Mutiplayer function
+- Ability to go between quizes
 
 ## Testing User Stories from User Experience Section
 
@@ -106,25 +106,26 @@
   - _As a returning visitor, I would like to be able to choose a different category of questions_
   - - 
 
-     - ![image]
+     - ![image]()
 
   - _As a returning visitor, I would like to be able to take the quiz again and possibly do better than the first time_ 
   - - 
 
-    - ![image]
+    - ![image]()
 
 ## Further Testing
   - The Website was tested on: 
     - _Google Chrome_
 
-      
+      - ![image]()
 
     - _Firefox_
 
-      
+      - ![image]()
+
     - _Brave browsers_
 
-      
+      - ![image]()
 
   - The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy Tablet and Samsung Galaxy 7, Samsung Galaxy 8, Samsung A12.
   - A large amount of testing was done to ensure that all of the pages were linking correctly. 
