@@ -1,84 +1,84 @@
-function displaypotterQuestion{
+function displayPotterQuestion{
     const questions = [
         {
             question: "How many Harry Potter Movies?",
-            optionA: "6",
-            optionB: "8",
-            optionC: "9",
-            optionD: "12",
-            correctOption: "optionB"
+            A: "6",
+            B: "8",
+            C: "9",
+            D: "12",
+            correctAnswer: "B"
         }
         {
             question: "What future Batman actor played Triwizard Tournament entrant Cedric Diggory?",
-            optionA: "Robert Pattinson",
-            optionB: "Christian Bale",
-            optionC: "Ben Affleck",
-            optionD: "Adam West",
-            correctOption: "optionA" 
+            A: "Robert Pattinson",
+            B: "Christian Bale",
+            C: "Ben Affleck",
+            D: "Adam West",
+            correctAnswer: "A" 
         }
         {
             question: "Who was Hermione's date at the Yule Ball?",
-            optionA: "Harry Potter",
-            optionB: "Lucious Molfoy",
-            optionC: "Ronald Weasly",
-            optionD: "Viktor Krum",
-            correctOption: "optionD" 
+            A: "Harry Potter",
+            B: "Lucious Molfoy",
+            C: "Ronald Weasly",
+            D: "Viktor Krum",
+            correctAnswer: "D" 
         }
         {
             question: "What was Harry Potter's mom's real name?",
-            optionA: "Rose",
-            optionB: "Tulip",
-            optionC: "Lily",
-            optionD: "Gertrude",
-            correctOption: "optionC" 
+            A: "Rose",
+            B: "Tulip",
+            C: "Lily",
+            D: "Gertrude",
+            correctAnswer: "C" 
         }
         {
             question: "What future Dr Who played Barty Crouch, Jr. in the Goblet of Fire?",
-            optionA: "David Tennant",
-            optionB: "Matt Smith",
-            optionC: "Peter Capaldi",
-            optionD: "Robert Pattinson",
-            correctOption: "optionA" 
+            A: "David Tennant",
+            B: "Matt Smith",
+            C: "Peter Capaldi",
+            D: "Robert Pattinson",
+            correctAnswer: "A" 
         }
         {
             question: "Who was the original actor to play Dumbledore?",
-            optionA: "Michael Gambon",
-            optionB: "David Tennant",
-            optionC: "Robert Pattinson",
-            optionD: "Richard Harris",
-            correctOption: "optionD"  
+            A: "Michael Gambon",
+            B: "David Tennant",
+            C: "Robert Pattinson",
+            D: "Richard Harris",
+            correctAnswer: "D"  
         }
         {
             question: "What floor was the forbidden corridor in the Philosopher's Stone?",
-            optionA: "3",
-            optionB: "1",
-            optionC: "4",
-            optionD: "2",
-            correctOption: "optionA"  
+            A: "3",
+            B: "1",
+            C: "4",
+            D: "2",
+            correctAnswer: "A"  
         }
         {
             question: "What animal represents Hufflepuff house?",
-            optionA: "snake",
-            optionB: "lion",
-            optionC: "badger",
-            optionD: "eagle",
-            correctOption: "optionC"  
+            A: "snake",
+            B: "lion",
+            C: "badger",
+            D: "eagle",
+            correctAnswer: "C"  
         }
         {
             question: "Who was the Minister of Magic for the 1st five movies?",
-            optionA: "Barty Crouch, Sr.",
-            optionB: "Cornelius Fudge",
-            optionC: "Barty Crouch, Jr.",
-            optionD: "Rufus Scrimgeour",
-            correctOption: "optionB"  
+            A: "Barty Crouch, Sr.",
+            B: "Cornelius Fudge",
+            C: "Barty Crouch, Jr.",
+            D: "Rufus Scrimgeour",
+            correctAnswer: "B"  
         }
         {
             question: "What class has a different teacher each year?",
-            optionA: "Potions",
-            optionB: "Defence of the Dark Arts",
-            optionC: "Divination",
-            optionD: "Charms",
-            correctOption: "optionB"  
+            A: "Potions",
+            B: "Defence of the Dark Arts",
+            C: "Divination",
+            D: "Charms",
+            correctAnswer: "B"  
         }
     ]
 }
@@ -86,83 +86,83 @@ function displayMarvelQuestion {
     const questions = [
         {
             question: "What was the first Marvel movie?",
-            optionA: "The Incredible Hulk",
-            optionB: "Iron Man",
-            optionC: "Thor",
-            optionD: "Captain America: The First Avenger",
-            correctOption: "optionB"
+            A: "The Incredible Hulk",
+            B: "Iron Man",
+            C: "Thor",
+            D: "Captain America: The First Avenger",
+            correctAnswer: "B"
         }
         {
             question: "Who had a cameo in every Marvel film up to Avengers:Endgame?",
-            optionA: "Elon Musk",
-            optionB: "Ken Jeong",
-            optionC: "Jenna Coleman",
-            optionD: "Stan Lee",
-            correctOption: "optionD"
+            A: "Elon Musk",
+            B: "Ken Jeong",
+            C: "Jenna Coleman",
+            D: "Stan Lee",
+            correctAnswer: "D"
         }
         {
             question: "What is Captain America's shield made out of?",
-            optionA: "Vibranium",
-            optionB: "Steel",
-            optionC: "Aluminum",
-            optionD: "Iron",
-            correctOption: "optionA"
+            A: "Vibranium",
+            B: "Steel",
+            C: "Aluminum",
+            D: "Iron",
+            correctAnswer: "A"
         }
         {
             question: "What is Black Widow's real name?",
-            optionA: "Yeleno Belova",
-            optionB: "Wanda Maximoff",
-            optionC: "Romanoff",
-            optionD: "Agatha Harkness",
-            correctOption: "optionC"
+            A: "Yeleno Belova",
+            B: "Wanda Maximoff",
+            C: "Romanoff",
+            D: "Agatha Harkness",
+            correctAnswer: "C"
         }
         {
             question: "Where was the Soul Stone hidden in Infinity War?",
-            optionA: "Thanos",
-            optionB: "Earth",
-            optionC: "Vormir",
-            optionD: "Titan",
-            correctOption: "optionC"
+            A: "Thanos",
+            B: "Earth",
+            C: "Vormir",
+            D: "Titan",
+            correctAnswer: "C"
         }
         {
             question: "Who made a cameo as Loki in the Asgardian play in Thor:Ragnorok?",
-            optionA: "Elon Musk",
-            optionB: "Ken Jeong",
-            optionC: "Stan Lee",
-            optionD: "Matt Damon",
-            correctOption: "optionD"
+            A: "Elon Musk",
+            B: "Ken Jeong",
+            C: "Stan Lee",
+            D: "Matt Damon",
+            correctAnswer: "D"
         }
         {
             question: "Who was the first actor to play James Rodes(aka War Machine) in the MCU?",
-            optionA: "Terrence Howard",
-            optionB: "Don Cheadle",
-            optionC: "Robert Downey, Jr.",
-            optionD: "None of the Above",
-            correctOption: "optionA"
+            A: "Terrence Howard",
+            B: "Don Cheadle",
+            C: "Robert Downey, Jr.",
+            D: "None of the Above",
+            correctAnswer: "A"
         }
         {
             question: "How many Infinity Stones are there?",
-            optionA: "9",
-            optionB: "5",
-            optionC: "6",
-            optionD: "4",
-            correctOption: "optionC"
+            A: "9",
+            B: "5",
+            C: "6",
+            D: "4",
+            correctAnswer: "C"
         }
         {
             question: "Who was Tony Stark's favorite band whose songs feature in the Iron Man movies?",
-            optionA: "Queen",
-            optionB: "AC/DC",
-            optionC: "The Who",
-            optionD: "Iron Maiden",
-            correctOption: "optionB"
+            A: "Queen",
+            B: "AC/DC",
+            C: "The Who",
+            D: "Iron Maiden",
+            correctAnswer: "optionB"
         }
         {
             question: "Which former Batman played a  Spiderman Villain the Vulture",
-            optionA: "Robert Pattinson",
-            optionB: "Michael Keaton",
-            optionC: "Christian Bale",
-            optionD: "Ben Affleck",
-            correctOption: "optionB"
+            A: "Robert Pattinson",
+            B: "Michael Keaton",
+            C: "Christian Bale",
+            D: "Ben Affleck",
+            correctAnswer: "optionB"
         }
     ]
 }
@@ -170,83 +170,83 @@ function displayDisneyQuestion {
     const questions = [
         {
             question: "What year did Walt Disney World open?",
-            optionA: "1957",
-            optionB: "1969",
-            optionC: "1971",
-            optionD: "1986",
-            correctOption: "optionC"
+            A: "1957",
+            B: "1969",
+            C: "1971",
+            D: "1986",
+            correctAnswer: "C"
         }
         {
             question: "What planet do guests visit in Star Wars: Galaxy's Edge?",
-            optionA: "Tatoiine",
-            optionB: "Hoth",
-            optionC: "Earth",
-            optionD: "Batuu",
-            correctOption: "optionD"
+            A: "Tatoiine",
+            B: "Hoth",
+            C: "Earth",
+            D: "Batuu",
+            correctAnswer: "D"
         }
         {
             question: "In Monster's Inc., there's nothing more toxic or deadly than what?",
-            optionA: "a human child",
-            optionB: "a dog",
-            optionC: "a cat",
-            optionD: "a door",
-            correctOption: "optionA"
+            A: "a human child",
+            B: "a dog",
+            C: "a cat",
+            D: "a door",
+            correctOption: "A"
         }
         {
             question: "What name did Ursula go by when she took human form?",
-            optionA: "Ariel",
-            optionB: "Vanessa",
-            optionC: "Jessica",
-            optionD: "Ursula",
-            correctOption: "optionB"
+            A: "Ariel",
+            B: "Vanessa",
+            C: "Jessica",
+            D: "Ursula",
+            correctAnswer: "B"
         }
         {
             question: "What grammy winner composed the songs on the Tarzan soundtrack?",
-            optionA: "Beyonce",
-            optionB: "Taylor Swift",
-            optionC: "Phil Collins",
-            optionD: "Lady Gaga",
-            correctOption: "optionC"
+            A: "Beyonce",
+            B: "Taylor Swift",
+            C: "Phil Collins",
+            D: "Lady Gaga",
+            correctOption: "C"
         }
         {
             question: "Who was experiment 626?",
-            optionA: "Stitch",
-            optionB: "Lilo",
-            optionC: "Angel",
-            optionD: "Leroy",
-            correctOption: "optionA"
+            A: "Stitch",
+            B: "Lilo",
+            C: "Angel",
+            D: "Leroy",
+            correctOption: "A"
         }
         {
             question: "Walt Disney had how many children?",
-            optionA: "4",
-            optionB: "2",
-            optionC: "3",
-            optionD: "1",
-            correctOption: "optionB"
+            A: "4",
+            B: "2",
+            C: "3",
+            D: "1",
+            correctOption: "B"
         }
         {
             question: "Who said: The past can hurt. But the way I see it, you can either run from it or learn from it?",
-            optionA: "Phil",
-            optionB: "Mufasa",
-            optionC: "Grandmother Willow",
-            optionD: "Rifiki",
-            correctOption: "optionD"
+            A: "Phil",
+            B: "Mufasa",
+            C: "Grandmother Willow",
+            D: "Rifiki",
+            correctAnswer: "D"
         }
         {
             question: "How many brother's does Prince Hans of the Southern Isles have in Frozen?",
-            optionA: "12",
-            optionB: "8",
-            optionC: "4",
-            optionD: "0",
-            correctOption: "optionA"
+            A: "12",
+            B: "8",
+            C: "4",
+            D: "0",
+            correctAnswer: "A"
         }
         {
             question: "How many fingers does Mickey Mouse have?",
-            optionA: "5",
-            optionB: "4",
-            optionC: "3",
-            optionD: "2",
-            correctOption: "optionB"
+            A: "5",
+            B: "4",
+            C: "3",
+            D: "2",
+            correctAnswer: "B"
         }
     ]
 }
@@ -322,7 +322,7 @@ function displayTrekQuestion {
             optionB: "The Archones",
             optionC: "The Elders",
             optionD: "The Prophets",
-            correctOption: "optionD"
+            correctAnswer: "optionD"
         }
         {
             question: "Which Star Trek Captain loves baseball?",
@@ -330,8 +330,128 @@ function displayTrekQuestion {
             optionB: "Benjamin Sisko",
             optionC: "James T. Kirk",
             optionD: "Jonathon Archer",
-            correctOption: "optionB"
+            correctAnswer: "optionB"
         }
     ]
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+	let buttons = document.getElementsByTagName("button");
+
+	for (let button of buttons) {
+		button.addEventListener("click", function() {
+			if (this.getAttribute("data-type") === "submit") {
+				checkAnswer();
+			} else {
+				let gameType = this.getAttribute("data-type");
+				runGame(gameType);
+			}
+		});
+	}
+
+	document.getElementById("answer-box").addEventListener("keydown", function(event) {
+		if (event.key === "Enter") {
+			checkAnswer();
+		}
+	});
+
+	runGame("potter");
+});
+
+function runGame(gameType) {
+
+	// 
+
+	document.getElementById("answer-box").value = "";
+	document.getElementById("answer-box").focus();
+
+
+	if (gameType === "potter") {
+		displayPotterQuestion;
+	} else if (gameType === "marvel") {
+		displayMarvelQuestion;
+	} else if (gameType === "disney") {
+		displayTrekQuestion;
+	} else if (gameType === "trek") {
+        displayTrekQuestion;
+    } else {
+		alert(`Unknown game type ${gameType}`);
+		throw `Unknown game type ${gameType}, aborting!`;
+	}
+
+}
+
+function calculateCorrectAnswer() {
+
+	// Compare Answer given to correct answer
+    console.log('In here')
+	
+	if (operator === "potter") {
+		return [question, optionA, optionB, optionC, optionD];
+	} else if (operator === "marvel") {
+		return [question, optionA, optionB, optionC, optionD];
+	} else if (operator ==="disney") {
+		return [question, optionA, optionB, optionC, optionD];
+	} else if (operator === "trek") { 
+        return [question, optionA, optionB, optionC, optionD];
+    } else {
+		alert(`Unimplemented operator ${operator}`);
+		throw `Unimplemented operator ${operator}, aborting!`;
+	}
+}
+
+function incrementScore() {
+
+	// Gets the current score from the DOM and increments it
+
+	let oldScore = parseInt(document.getElementById("score").innerText);
+	document.getElementById("score").innerText = ++oldScore;
+
+}
+
+function incrementWrongAnswer() {
+
+	// Gets the current tally of incorrect answers from the DOM and increments it
+
+	let oldScore = parseInt(document.getElementById("incorrect").innerText);
+	document.getElementById("incorrect").innerText = ++oldScore;
+
+}
+
+function displayPottertQuestion() {
+
+	document.getElementById("question").textContent =question:;
+    document.getElementById("optionA").textContent = optionA;
+    document.getElementById("optionB").textContent = optionB;
+    document.getElementById("optionC").textContent = optionC;
+    document.getElementById("optionD").textContent = optionD;
+
+}
+
+function displayMarvelQuestion(operand1, operand2) {
+
+	document.getElementById("question").textContent =question:;
+    document.getElementById("optionA").textContent = optionA;
+    document.getElementById("optionB").textContent = optionB;
+    document.getElementById("optionC").textContent = optionC;
+    document.getElementById("optionD").textContent = optionD;
+}
+
+function displayDisneyQuestion() {
+
+	document.getElementById("question").textContent =question:;
+    document.getElementById("optionA").textContent = optionA;
+    document.getElementById("optionB").textContent = optionB;
+    document.getElementById("optionC").textContent = optionC;
+    document.getElementById("optionD").textContent = optionD;
+
+}
+
+function displayTrekQuestion() {
+    
+    document.getElementById("question").textContent =question:;
+    document.getElementById("optionA").textContent = optionA;
+    document.getElementById("optionB").textContent = optionB;
+    document.getElementById("optionC").textContent = optionC;
+    document.getElementById("optionD").textContent = optionD;
+    
