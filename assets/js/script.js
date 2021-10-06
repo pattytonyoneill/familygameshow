@@ -1,3 +1,26 @@
+document.addEventListener("DOMContentLoaded", function() {
+	let buttons = document.getElementsByTagName("button");
+
+	for (let button of buttons) {
+		button.addEventListener("click", function() {
+			if (this.getAttribute("data-type") === "submit") {
+				checkAnswer();
+			} else {
+				let gameType = this.getAttribute("data-type");
+				runGame(gameType);
+			}
+		});
+	}
+
+	document.getElementById("answer-box").addEventListener("keydown", function(event) {
+		if (event.key === "Enter") {
+			checkAnswer();
+		}
+	});
+
+	runGame("potter");
+});
+
 function displayPotterQuestion{
     const questions = [
         {
@@ -335,28 +358,7 @@ function displayTrekQuestion {
     ]
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-	let buttons = document.getElementsByTagName("button");
 
-	for (let button of buttons) {
-		button.addEventListener("click", function() {
-			if (this.getAttribute("data-type") === "submit") {
-				checkAnswer();
-			} else {
-				let gameType = this.getAttribute("data-type");
-				runGame(gameType);
-			}
-		});
-	}
-
-	document.getElementById("answer-box").addEventListener("keydown", function(event) {
-		if (event.key === "Enter") {
-			checkAnswer();
-		}
-	});
-
-	runGame("potter");
-});
 
 function runGame(gameType) {
 
@@ -420,7 +422,7 @@ function incrementWrongAnswer() {
 
 function displayPottertQuestion() {
 
-	document.getElementById("question").textContent =question:;
+	document.getElementById("question").textContent ="question:";
     document.getElementById("optionA").textContent = optionA;
     document.getElementById("optionB").textContent = optionB;
     document.getElementById("optionC").textContent = optionC;
@@ -430,7 +432,7 @@ function displayPottertQuestion() {
 
 function displayMarvelQuestion(operand1, operand2) {
 
-	document.getElementById("question").textContent =question:;
+	document.getElementById("question").textContent ="question:";
     document.getElementById("optionA").textContent = optionA;
     document.getElementById("optionB").textContent = optionB;
     document.getElementById("optionC").textContent = optionC;
@@ -439,7 +441,7 @@ function displayMarvelQuestion(operand1, operand2) {
 
 function displayDisneyQuestion() {
 
-	document.getElementById("question").textContent =question:;
+	document.getElementById("question").textContent ="question:";
     document.getElementById("optionA").textContent = optionA;
     document.getElementById("optionB").textContent = optionB;
     document.getElementById("optionC").textContent = optionC;
@@ -449,7 +451,7 @@ function displayDisneyQuestion() {
 
 function displayTrekQuestion() {
     
-    document.getElementById("question").textContent =question:;
+    document.getElementById("question").textContent ="question:";
     document.getElementById("optionA").textContent = optionA;
     document.getElementById("optionB").textContent = optionB;
     document.getElementById("optionC").textContent = optionC;
