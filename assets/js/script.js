@@ -1,4 +1,4 @@
-function displaypotterQuestion{
+function displayPotterQuestion(){
     const questions = [
         {
             question: "How many Harry Potter Movies?",
@@ -7,7 +7,7 @@ function displaypotterQuestion{
             optionC: "9",
             optionD: "12",
             correctOption: "optionB"
-        }
+        },
         {
             question: "What future Batman actor played Triwizard Tournament entrant Cedric Diggory?",
             optionA: "Robert Pattinson",
@@ -15,7 +15,7 @@ function displaypotterQuestion{
             optionC: "Ben Affleck",
             optionD: "Adam West",
             correctOption: "optionA" 
-        }
+        },
         {
             question: "Who was Hermione's date at the Yule Ball?",
             optionA: "Harry Potter",
@@ -23,7 +23,7 @@ function displaypotterQuestion{
             optionC: "Ronald Weasly",
             optionD: "Viktor Krum",
             correctOption: "optionD" 
-        }
+        },
         {
             question: "What was Harry Potter's mom's real name?",
             optionA: "Rose",
@@ -31,7 +31,7 @@ function displaypotterQuestion{
             optionC: "Lily",
             optionD: "Gertrude",
             correctOption: "optionC" 
-        }
+        },
         {
             question: "What future Dr Who played Barty Crouch, Jr. in the Goblet of Fire?",
             optionA: "David Tennant",
@@ -39,7 +39,7 @@ function displaypotterQuestion{
             optionC: "Peter Capaldi",
             optionD: "Robert Pattinson",
             correctOption: "optionA" 
-        }
+        },
         {
             question: "Who was the original actor to play Dumbledore?",
             optionA: "Michael Gambon",
@@ -47,7 +47,7 @@ function displaypotterQuestion{
             optionC: "Robert Pattinson",
             optionD: "Richard Harris",
             correctOption: "optionD"  
-        }
+        },
         {
             question: "What floor was the forbidden corridor in the Philosopher's Stone?",
             optionA: "3",
@@ -55,7 +55,7 @@ function displaypotterQuestion{
             optionC: "4",
             optionD: "2",
             correctOption: "optionA"  
-        }
+        },
         {
             question: "What animal represents Hufflepuff house?",
             optionA: "snake",
@@ -63,7 +63,7 @@ function displaypotterQuestion{
             optionC: "badger",
             optionD: "eagle",
             correctOption: "optionC"  
-        }
+        },
         {
             question: "Who was the Minister of Magic for the 1st five movies?",
             optionA: "Barty Crouch, Sr.",
@@ -71,7 +71,7 @@ function displaypotterQuestion{
             optionC: "Barty Crouch, Jr.",
             optionD: "Rufus Scrimgeour",
             correctOption: "optionB"  
-        }
+        },
         {
             question: "What class has a different teacher each year?",
             optionA: "Potions",
@@ -82,7 +82,7 @@ function displaypotterQuestion{
         }
     ]
 }
-function displayMarvelQuestion { 
+function displayMarvelQuestion () { 
     const questions = [
         {
             question: "What was the first Marvel movie?",
@@ -91,7 +91,7 @@ function displayMarvelQuestion {
             optionC: "Thor",
             optionD: "Captain America: The First Avenger",
             correctOption: "optionB"
-        }
+        },
         {
             question: "Who had a cameo in every Marvel film up to Avengers:Endgame?",
             optionA: "Elon Musk",
@@ -99,7 +99,7 @@ function displayMarvelQuestion {
             optionC: "Jenna Coleman",
             optionD: "Stan Lee",
             correctOption: "optionD"
-        }
+        },
         {
             question: "What is Captain America's shield made out of?",
             optionA: "Vibranium",
@@ -107,7 +107,7 @@ function displayMarvelQuestion {
             optionC: "Aluminum",
             optionD: "Iron",
             correctOption: "optionA"
-        }
+        },
         {
             question: "What is Black Widow's real name?",
             optionA: "Yeleno Belova",
@@ -115,7 +115,7 @@ function displayMarvelQuestion {
             optionC: "Romanoff",
             optionD: "Agatha Harkness",
             correctOption: "optionC"
-        }
+        },
         {
             question: "Where was the Soul Stone hidden in Infinity War?",
             optionA: "Thanos",
@@ -123,7 +123,7 @@ function displayMarvelQuestion {
             optionC: "Vormir",
             optionD: "Titan",
             correctOption: "optionC"
-        }
+        },
         {
             question: "Who made a cameo as Loki in the Asgardian play in Thor:Ragnorok?",
             optionA: "Elon Musk",
@@ -131,7 +131,7 @@ function displayMarvelQuestion {
             optionC: "Stan Lee",
             optionD: "Matt Damon",
             correctOption: "optionD"
-        }
+        },
         {
             question: "Who was the first actor to play James Rodes(aka War Machine) in the MCU?",
             optionA: "Terrence Howard",
@@ -139,7 +139,7 @@ function displayMarvelQuestion {
             optionC: "Robert Downey, Jr.",
             optionD: "None of the Above",
             correctOption: "optionA"
-        }
+        },
         {
             question: "How many Infinity Stones are there?",
             optionA: "9",
@@ -147,7 +147,7 @@ function displayMarvelQuestion {
             optionC: "6",
             optionD: "4",
             correctOption: "optionC"
-        }
+        },
         {
             question: "Who was Tony Stark's favorite band whose songs feature in the Iron Man movies?",
             optionA: "Queen",
@@ -155,7 +155,7 @@ function displayMarvelQuestion {
             optionC: "The Who",
             optionD: "Iron Maiden",
             correctOption: "optionB"
-        }
+        },
         {
             question: "Which former Batman played a  Spiderman Villain the Vulture",
             optionA: "Robert Pattinson",
@@ -166,7 +166,7 @@ function displayMarvelQuestion {
         }
     ]
 }
-function displayDisneyQuestion { 
+function displayDisneyQuestion (){ 
     const questions = [
         {
             question: "What year did Walt Disney World open?",
@@ -175,7 +175,7 @@ function displayDisneyQuestion {
             optionC: "1971",
             optionD: "1986",
             correctOption: "optionC"
-        }
+        },
         {
             question: "What planet do guests visit in Star Wars: Galaxy's Edge?",
             optionA: "Tatoiine",
@@ -183,7 +183,7 @@ function displayDisneyQuestion {
             optionC: "Earth",
             optionD: "Batuu",
             correctOption: "optionD"
-        }
+        },
         {
             question: "In Monster's Inc., there's nothing more toxic or deadly than what?",
             optionA: "a human child",
@@ -191,7 +191,7 @@ function displayDisneyQuestion {
             optionC: "a cat",
             optionD: "a door",
             correctOption: "optionA"
-        }
+        },
         {
             question: "What name did Ursula go by when she took human form?",
             optionA: "Ariel",
@@ -199,7 +199,7 @@ function displayDisneyQuestion {
             optionC: "Jessica",
             optionD: "Ursula",
             correctOption: "optionB"
-        }
+        },
         {
             question: "What grammy winner composed the songs on the Tarzan soundtrack?",
             optionA: "Beyonce",
@@ -207,7 +207,7 @@ function displayDisneyQuestion {
             optionC: "Phil Collins",
             optionD: "Lady Gaga",
             correctOption: "optionC"
-        }
+        },
         {
             question: "Who was experiment 626?",
             optionA: "Stitch",
@@ -215,7 +215,7 @@ function displayDisneyQuestion {
             optionC: "Angel",
             optionD: "Leroy",
             correctOption: "optionA"
-        }
+        },
         {
             question: "Walt Disney had how many children?",
             optionA: "4",
@@ -223,7 +223,7 @@ function displayDisneyQuestion {
             optionC: "3",
             optionD: "1",
             correctOption: "optionB"
-        }
+        },
         {
             question: "Who said: The past can hurt. But the way I see it, you can either run from it or learn from it?",
             optionA: "Phil",
@@ -231,7 +231,7 @@ function displayDisneyQuestion {
             optionC: "Grandmother Willow",
             optionD: "Rifiki",
             correctOption: "optionD"
-        }
+        },
         {
             question: "How many brother's does Prince Hans of the Southern Isles have in Frozen?",
             optionA: "12",
@@ -239,7 +239,7 @@ function displayDisneyQuestion {
             optionC: "4",
             optionD: "0",
             correctOption: "optionA"
-        }
+        },
         {
             question: "How many fingers does Mickey Mouse have?",
             optionA: "5",
@@ -250,7 +250,7 @@ function displayDisneyQuestion {
         }
     ]
 }
-function displayTrekQuestion { 
+function displayTrekQuestion() { 
     const questions = [
         {
             question: "Who played the original Captain Kirk?",
@@ -259,7 +259,7 @@ function displayTrekQuestion {
             optionC: "Scott Bakula",
             optionD: "Jeffrey Hunter",
             correctOption: "optionB"
-        }
+        },
         {
             question: "Who played Christopher Pike in the original pilot of Star Trek?",
             optionA: "Patrick Stewart",
@@ -267,7 +267,7 @@ function displayTrekQuestion {
             optionC: "Scott Bakula",
             optionD: "Jeffrey Hunter",
             correctOption: "optionD"
-        }
+        },
         {
             question: "Which Star Trek Captain had an artificial heart?",
             optionA: "Jonathon Archer",
@@ -275,7 +275,7 @@ function displayTrekQuestion {
             optionC: "Katherine Janeway",
             optionD: "Jean Luc Picard",
             correctOption: "optionD"
-        }
+        },
         {
             question: "Who was the first Vulcan science aboard the Starship Enterprise?",
             optionA: "Tuvok",
@@ -283,7 +283,7 @@ function displayTrekQuestion {
             optionC: "Spock",
             optionD: "T'Pol",
             correctOption: "optionD"
-        }
+        },
         {
             question: "What species was the first to discover warp drive?",
             optionA: "Vulcans",
@@ -291,7 +291,7 @@ function displayTrekQuestion {
             optionC: "Humans",
             optionD: "Borg",
             correctOption: "optionA"
-        }
+        },
         {
             question: "What Star Trek actor originally devised the Klingon language?",
             optionA: "Leonard Nimoy",
@@ -299,7 +299,7 @@ function displayTrekQuestion {
             optionC: "Michael Ansara",
             optionD: "Mark Lenard",
             correctOption: "optionB"
-        }
+        },
         {
             question: "What character was adopted by the Vulcan Ambassodor Sarek?",
             optionA: "Sylvia Tilly",
@@ -307,7 +307,7 @@ function displayTrekQuestion {
             optionC: "Michael Burnam",
             optionD: "Sybok",
             correctOption: "optionC"
-        }
+        },
         {
             question: "What character dies on the series finale of Star Trek Enterprise?",
             optionA: "Trip",
@@ -315,7 +315,7 @@ function displayTrekQuestion {
             optionC: "Phlox",
             optionD: "T'Pol",
             correctOption: "optionA"
-        }
+        },
         {
             question: "Who created the Bajoran wormhole?",
             optionA: "The Founders",
@@ -323,7 +323,7 @@ function displayTrekQuestion {
             optionC: "The Elders",
             optionD: "The Prophets",
             correctOption: "optionD"
-        }
+        },
         {
             question: "Which Star Trek Captain loves baseball?",
             optionA: "Jean Luc Picard",
@@ -333,5 +333,70 @@ function displayTrekQuestion {
             correctOption: "optionB"
         }
     ]
+}
+
+function runGame(gameType) {
+
+	document.getElementById("answer-box").value = "";
+	document.getElementById("answer-box").focus();
+
+
+	if (gameType === "potter") {
+		displayPotterQuestion();
+	} else if (gameType === "marvel") {
+		displayMarvelQuestion();
+	} else if (gameType === "disney") {
+		displayTrekQuestion();
+	} else if (gameType === "trek") {
+        displayTrekQuestion();
+    } else {
+		alert(`Unknown game type ${gameType}`);
+		throw `Unknown game type ${gameType}, aborting!`;
+	}
+
+}
+
+function calculateCorrectAnswer() {
+
+	// Compare Answer given to correct answer
+    console.log('In here')
+
+    document.getElementById("question:").textContent;
+    document.getElementById("A:").textContent;
+    document.getElementById("B:").textContent;
+    document.getElementById("C:").textContent;
+    document.getElementById("D:").textContent;
+    console.log('*****', question, A, B, C, D, correctOption)
+	
+	if (operator === "potter") {
+		return ["question", "A", "B", "optionC", "optionD"];
+	} else if (operator === "marvel") {
+		return [question, optionA, optionB, optionC, optionD];
+	} else if (operator ==="disney") {
+		return [question, optionA, optionB, optionC, optionD];
+	} else if (operator === "trek") { 
+        return [question, optionA, optionB, optionC, optionD];
+    } else {
+		alert(`Unimplemented operator ${operator}`);
+		throw `Unimplemented operator ${operator}, aborting!`;
+	}
+}
+
+function incrementScore() {
+
+	// Gets the current score from the DOM and increments it
+
+	let oldScore = parseInt(document.getElementById("score").innerText);
+	document.getElementById("score").innerText = ++oldScore;
+
+}
+
+function incrementWrongAnswer() {
+
+	// Gets the current tally of incorrect answers from the DOM and increments it
+
+	let oldScore = parseInt(document.getElementById("incorrect").innerText);
+	document.getElementById("incorrect").innerText = ++oldScore;
+
 }
 
