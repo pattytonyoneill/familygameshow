@@ -345,7 +345,7 @@ let questionNumber = 1
 let indexNumber = 0
 
 //function to shuffle and push 10 questions
-function handleQuestions() {
+function handleQuestion() {
     while (shuffleQuestions.length <= 9) {
         const random = questions[Math.random() * questions.length]
         if (!shuffleQuestions.includes(random)) {
