@@ -132,7 +132,7 @@
   - Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. I aso had my client test the website to see if it was what they wanted.
 
 ## Known Bugs
-- 
+- Had difficulty with getting questions to print on quiz page.  
 
 ## Deployment
 
@@ -154,7 +154,6 @@ Alternatively, if you use Gitpod, you can [click here](https://gitpod.io/#https:
 
 ### Code
 - _Readme used sample readme from code institute as a model. [Github](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md)_
-- _The full screen hero image came from_
 
 ### Content
 - _All content written by the developer._

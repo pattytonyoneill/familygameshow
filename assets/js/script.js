@@ -335,6 +335,25 @@ function displayTrekQuestion() {
     ]
 }
 
+//empty array to hold shuffled selected questions
+let shuffleQuestions = []
+
+//holds the current question number
+let questionNumber = 1
+
+//will be used in displaying the next question
+let indexNumber = 0
+
+//function to shuffle and push 10 questions
+function handleQuestions() {
+    while (shuffleQuestions.length <= 9) {
+        const random = questions[Math.random() * questions.length]
+        if (!shuffleQuestions.includes(random)) {
+        shuffleQuestions.push(random)
+        }
+    }
+}
+
 function runGame(gameType) {
 
 	document.getElementById("answer-box").value = "";
@@ -356,47 +375,29 @@ function runGame(gameType) {
 
 }
 
-function calculateCorrectAnswer() {
+//function to display next question
+function nextQuestion(index) {
+    handleQuestions()
+    const currentQuestion = shuffledQuestions[index]
+    document.getElementById("question-number").innerHTML = questionNumber;
+    document.getElementById("display-question").innerHTML = display;
+    document.getElementById(optionA).innerHTML = currentQuestion.question;
+    document.getElementById(optionB).innerHTML = currentQuestion.question;
+    document.getElementById(optionC).innerHTML = currentQuestion.question;
+    document.getElementById(optionD).innerHTML = currentQuestion.question;
+}
 
-	// Compare Answer given to correct answer
-    console.log('In here')
-
-    document.getElementById("question:").textContent;
-    document.getElementById("A:").textContent;
-    document.getElementById("B:").textContent;
-    document.getElementById("C:").textContent;
-    document.getElementById("D:").textContent;
-    console.log('*****', question, A, B, C, D, correctOption)
-	
-	if (operator === "potter") {
-		return ["question", "A", "B", "optionC", "optionD"];
-	} else if (operator === "marvel") {
-		return [question, optionA, optionB, optionC, optionD];
-	} else if (operator ==="disney") {
-		return [question, optionA, optionB, optionC, optionD];
-	} else if (operator === "trek") { 
-        return [question, optionA, optionB, optionC, optionD];
+function checkAnswer() {
+    let userAnswer = parseInt(document.getElementById("answer-box").value);
+    let  optionChosen=correctOption;
+    let isCorrect = userAnswer === correctOption[0];
+    if (isCorrect) {
+        alert("Yay! You got it right!! ;D")
+        incrementScore();
     } else {
-		alert(`Unimplemented operator ${operator}`);
-		throw `Unimplemented operator ${operator}, aborting!`;
-	}
-}
-
-function incrementScore() {
-
-	// Gets the current score from the DOM and increments it
-
-	let oldScore = parseInt(document.getElementById("score").innerText);
-	document.getElementById("score").innerText = ++oldScore;
-
-}
-
-function incrementWrongAnswer() {
-
-	// Gets the current tally of incorrect answers from the DOM and increments it
-
-	let oldScore = parseInt(document.getElementById("incorrect").innerText);
-	document.getElementById("incorrect").innerText = ++oldScore;
-
+        alert ("Awww...you answered ${userAnswer}. The correct answer was ${correctOption[0]} !" );
+        incrementWrongAnswer();
+    }
+    runGame(optionChosen[1]);
 }
 
