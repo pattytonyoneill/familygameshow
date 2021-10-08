@@ -336,23 +336,13 @@ function displayTrekQuestion() {
 }
 
 //empty array to hold shuffled selected questions
-let shuffleQuestions = []
+let shuffledQuestions = []
 
 //holds the current question number
 let questionNumber = 1
 
 //will be used in displaying the next question
 let indexNumber = 0
-
-//function to shuffle and push 10 questions
-function handleQuestion() {
-    while (shuffleQuestions.length <= 9) {
-        const random = questions[Math.random() * questions.length]
-        if (!shuffleQuestions.includes(random)) {
-        shuffleQuestions.push(random)
-        }
-    }
-}
 
 function runGame(gameType) {
 
@@ -374,20 +364,36 @@ function runGame(gameType) {
 	}
 
 }
+let shuffledQuestions = []
+
+//function to shuffle and push 10 questions
+function handleQuestion() {
+    while (shuffledQuestions.length <= 9) {
+        const random = questions[Math.floor(Math.random() * questions.length)]
+        if (!shuffledQuestions.includes(random)) {
+        shuffledQuestions.push(random)
+        }
+    }
+}
 
 //function to display next question
 function nextQuestion(index) {
-    handleQuestions()
+    handleQuestion()
     const currentQuestion = shuffledQuestions[index]
     document.getElementById("question-number").innerHTML = questionNumber;
     document.getElementById("display-question").innerHTML = display;
-    document.getElementById(optionA).innerHTML = currentQuestion.question;
-    document.getElementById(optionB).innerHTML = currentQuestion.question;
-    document.getElementById(optionC).innerHTML = currentQuestion.question;
-    document.getElementById(optionD).innerHTML = currentQuestion.question;
+    document.getElementById("optionA").innerHTML = currentQuestion.question;
+    document.getElementById("optionB").innerHTML = currentQuestion.question;
+    document.getElementById("optionC").innerHTML = currentQuestion.question;
+    document.getElementById("optionD").innerHTML = currentQuestion.question;
 }
 
 function checkAnswer() {
+    const currentQuestion = shuffledQuestions[indexNumber]
+    const currentQuestionAnswer = currentQuestion.correctOption
+    const options = document.getElementsByName("option")
+    let correctOption=null
+    
     let userAnswer = parseInt(document.getElementById("answer-box").value);
     let  optionChosen=correctOption;
     let isCorrect = userAnswer === correctOption[0];
