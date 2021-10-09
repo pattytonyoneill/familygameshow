@@ -1,3 +1,114 @@
+// Get the button elements and add event listeners to them
+
+document.addEventListener("DOMContentLoaded", function() {
+	let buttons = document.getElementsByTagName("button");
+
+	for (let button of buttons) {
+		button.addEventListener("click", function() {
+			if (this.getAttribute("data-type") === "submit") {
+				checkAnswer();
+			} else {
+				let gameType = this.getAttribute("data-type");
+				runGame(gameType);
+			}
+		});
+	}
+
+	document.getElementById("answer-box").addEventListener("keydown", function(event) {
+		if (event.key === "Enter") {
+			checkAnswer();
+		}
+	});
+
+	runGame("potter");
+});
+
+function runGame(gameType) {
+
+	
+
+	document.getElementById("answer-box").value = "";
+	document.getElementById("answer-box").focus();
+
+	
+
+	if (gameType === "potter") {
+		displayPotterQuestion(question, optionA, optionB, optionC, optionD);
+	} else if (gameType === "marvel") {
+		displayMarvelQuestion(question, optionA, optionB, optionC, optionD);
+	} else if (gameType === "subtract") {
+		displayDisneyQuestion(question, optionA, optionB, optionC, optionD);
+	} else if (gameType === "division") {
+        displayTrekQuestion(question, optionA, optionB, optionC, optionD);
+    } else {
+		alert(`Unknown game type ${gameType}`);
+		throw `Unknown game type ${gameType}, aborting!`;
+	}
+
+}
+
+function checkAnswer() {
+
+	// Checks the answer against the first element in
+	// the returned calculateCorrectAnswer array
+
+	let userAnswer = parseInt(document.getElementById("answer-box").value);
+	let  calculateCorrectAnswer = correctOption();
+	let isCorrect = userAnswer === correctOption[0];
+
+	if (isCorrect) {
+		alert("Hey! You got it right! :D");
+		incrementScore();
+	} else {
+		alert(`Awwww...you answered ${userAnswer}. The correct answer was ${correctOption[0]}!`);
+		incrementWrongAnswer();
+	}
+
+	runGame(correctOption[1]);
+
+}
+
+function calculateCorrectAnswer() {
+
+	// Gets the operands (the numbers) and the operator (plus, minus etc)
+	// directly from the DOM
+    console.log('In here')
+	let operand1 = parseInt(document.getElementById("operand1").textContent);
+	let operand2 = parseInt(document.getElementById("operand2").textContent);
+	let operator = document.getElementById("operator").textContent;
+    console.log('*****', operator, operand1, operand2)
+	if (operator === "+") {
+		return [operand1 + operand2, "addition"];
+	} else if (operator === "x") {
+		return [operand1 * operand2, "multiply"];
+	} else if (operator ==="-") {
+		return [operand1 - operand2, "subtract"];
+	} else if (operator === "/") { 
+        return [operand1 / operand2, "division"];
+    } else {
+		alert(`Unimplemented operator ${operator}`);
+		throw `Unimplemented operator ${operator}, aborting!`;
+	}
+}
+
+function incrementScore() {
+
+	// Gets the current score from the DOM and increments it
+
+	let oldScore = parseInt(document.getElementById("score").innerText);
+	document.getElementById("score").innerText = ++oldScore;
+
+}
+
+function incrementWrongAnswer() {
+
+	// Gets the current tally of incorrect answers from the DOM and increments it
+
+	let oldScore = parseInt(document.getElementById("incorrect").innerText);
+	document.getElementById("incorrect").innerText = ++oldScore;
+
+}
+
 function displayPotterQuestion(){
     const questions = [
         {
@@ -334,76 +445,3 @@ function displayTrekQuestion() {
         }
     ]
 }
-
-//empty array to hold shuffled selected questions
-let shuffledQuestions = []
-
-//holds the current question number
-let questionNumber = 1
-
-//will be used in displaying the next question
-let indexNumber = 0
-
-function runGame(gameType) {
-
-	document.getElementById("answer-box").value = "";
-	document.getElementById("answer-box").focus();
-
-
-	if (gameType === "potter") {
-		displayPotterQuestion();
-	} else if (gameType === "marvel") {
-		displayMarvelQuestion();
-	} else if (gameType === "disney") {
-		displayTrekQuestion();
-	} else if (gameType === "trek") {
-        displayTrekQuestion();
-    } else {
-		alert(`Unknown game type ${gameType}`);
-		throw `Unknown game type ${gameType}, aborting!`;
-	}
-
-}
-let shuffledQuestions = []
-
-//function to shuffle and push 10 questions
-function handleQuestion() {
-    while (shuffledQuestions.length <= 9) {
-        const random = questions[Math.floor(Math.random() * questions.length)]
-        if (!shuffledQuestions.includes(random)) {
-        shuffledQuestions.push(random)
-        }
-    }
-}
-
-//function to display next question
-function nextQuestion(index) {
-    handleQuestion()
-    const currentQuestion = shuffledQuestions[index]
-    document.getElementById("question-number").innerHTML = questionNumber;
-    document.getElementById("display-question").innerHTML = display;
-    document.getElementById("optionA").innerHTML = currentQuestion.question;
-    document.getElementById("optionB").innerHTML = currentQuestion.question;
-    document.getElementById("optionC").innerHTML = currentQuestion.question;
-    document.getElementById("optionD").innerHTML = currentQuestion.question;
-}
-
-function checkAnswer() {
-    const currentQuestion = shuffledQuestions[indexNumber]
-    const currentQuestionAnswer = currentQuestion.correctOption
-    const options = document.getElementsByName("option")
-    let correctOption=null
-    
-    let userAnswer = parseInt(document.getElementById("answer-box").value);
-    let  optionChosen=correctOption;
-    let isCorrect = userAnswer === correctOption[0];
-    if (isCorrect) {
-        alert("Yay! You got it right!! ;D")
-        incrementScore();
-    } else {
-        alert ("Awww...you answered ${userAnswer}. The correct answer was ${correctOption[0]} !" );
-        incrementWrongAnswer();
-    }
-    runGame(optionChosen[1]);
-}
-
