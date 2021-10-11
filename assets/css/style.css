@@ -116,6 +116,9 @@ body {
 .btn--blue {
     border-color: blue;
     color: blue;
+    width: 100px;
+    padding: 4px;
+    margin: 10px;
 }
 
 .btn--blue:active,
