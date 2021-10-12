@@ -29,13 +29,13 @@ function runGame(gameType) {
 	document.getElementById("answer-box").focus();
 
 	if (gameType === "potter") {
-		displayPotterQuestion(questions, question, optionA, optionB, optionC, optionD);
+		potterQuestions(question, a, b, c, d);
 	} else if (gameType === "marvel") {
-		displayMarvelQuestion(questions, question, optionA, optionB, optionC, optionD);
+		marvelQuestions(question, a, b, c, d);
 	} else if (gameType === "subtract") {
-		displayDisneyQuestion(questions, question, optionA, optionB, optionC, optionD);
+		disneyQuestions(question, a, b, c, d);
 	} else if (gameType === "division") {
-        displayTrekQuestion(questions, question, optionA, optionB, optionC, optionD);
+        trekQuestions(question, a, b, c, d);
     } else {
 		alert(`Unknown game type ${gameType}`);
 		throw `Unknown game type ${gameType}, aborting!`;
@@ -72,13 +72,13 @@ function calculateCorrectAnswer() {
     console.log(question, optionA, optionB, optionC, optionD)
 
 	if (operator === "potter") {
-		return [question, optionA, optionB, optionC, optionD ];
+		return [question, a, b, c, d ];
 	} else if (operator === "marvel") {
-		return [question, optionA, optionB, optionC, optionD ];
+		return [question, a, b, c, d ];
 	} else if (operator ==="disney") {
-		return [question, optionA, optionB, optionC, optionD ];
+		return [question, a, b, c, d ];
 	} else if (operator === "trek") { 
-        return [question, optionA, optionB, optionC, optionD ];
+        return [question, a, b, c, d ];
     } else {
 		alert(`Unimplemented operator ${operator}`);
 		throw `Unimplemented operator ${operator}, aborting!`;

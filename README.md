@@ -19,7 +19,7 @@
 ## Frameworks, Libraries & Programs Used:
 
 - [Google Fonts](https://fonts.google.com/):_ 
-- [Font Awesome](https://fontawesome.com/): 
+- [Font Awesome](https://fontawesome.com/): used to add buttons for choosing quiz type
 - [Git](https://git-scm.com): used to utilize the Gitpod terminal to commit to Git and Push to GitHub
 - [GitHub](https://github.com/): used to store project code after being pushed from Git
 - [Balsamiq](https://balsamiq.com/) Used to create the wire frame for the project during the planning phase
@@ -141,7 +141,7 @@
   - Use the source section drop-down menu and select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - 
+The live link can be found here - https://pattytonyoneill.github.io/familygameshow/
 
 ## Local Deployment
 
