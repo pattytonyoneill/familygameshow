@@ -26,6 +26,7 @@
 - [ColorSpace](https://mycolor.space) 
 - [ImageColorPicker](https://imagecolorpicker.com/en/user/shared-palette?id=308363078299288132): 
 - [Am I Responsive?](http://ami.responsivedesign.is/)
+- [Pixabay](https://pixabay.com/)
 
 - _W3C Markup Validator Results_ - 
   - 
@@ -41,7 +42,7 @@
 
 - _Imagery:_
 
-  - 
+  - background photo at []
 
 - _Balsamiq Wireframes:_
 
@@ -159,7 +160,7 @@ Alternatively, if you use Gitpod, you can [click here](https://gitpod.io/#https:
 - _All content written by the developer._
 
 ### Media
-_Images came from_
+_Images came from pixabay.com_
 
 
 ### Acknowlegements

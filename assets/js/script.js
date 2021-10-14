@@ -25,17 +25,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function runGame(gameType) {
 
+    document.getElementById("potterQuestions")
+
 	document.getElementById("answer-box").value = "";
 	document.getElementById("answer-box").focus();
 
 	if (gameType === "potter") {
 		potterQuestions(question, a, b, c, d);
-	} else if (gameType === "marvel") {
-		marvelQuestions(question, a, b, c, d);
-	} else if (gameType === "subtract") {
-		disneyQuestions(question, a, b, c, d);
-	} else if (gameType === "division") {
-        trekQuestions(question, a, b, c, d);
+	
     } else {
 		alert(`Unknown game type ${gameType}`);
 		throw `Unknown game type ${gameType}, aborting!`;
@@ -65,20 +62,15 @@ function calculateCorrectAnswer() {
     console.log('In here')
     
 	let question = parseInt(document.getElementById("question").textContent);
-	let optionA = parseInt(document.getElementById("optionA").textContent);
-    let optionB = parseInt(document.getElementById("optionB").textContent);
-	let optionC = parseInt(document.getElementById("optionC").textContent);
-	let optionD = parseInt(document.getElementById("optionD").textContent);
-    console.log(question, optionA, optionB, optionC, optionD)
+	let a = parseInt(document.getElementById("a").textContent);
+    let b = parseInt(document.getElementById("b").textContent);
+	let c = parseInt(document.getElementById("c").textContent);
+	let d = parseInt(document.getElementById("d").textContent);
+    console.log(question, a, b, c, d)
 
 	if (operator === "potter") {
 		return [question, a, b, c, d ];
-	} else if (operator === "marvel") {
-		return [question, a, b, c, d ];
-	} else if (operator ==="disney") {
-		return [question, a, b, c, d ];
-	} else if (operator === "trek") { 
-        return [question, a, b, c, d ];
+	
     } else {
 		alert(`Unimplemented operator ${operator}`);
 		throw `Unimplemented operator ${operator}, aborting!`;
