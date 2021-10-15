@@ -31,7 +31,7 @@ function runGame(gameType) {
 	document.getElementById("answer-box").focus();
 
 	if (gameType === "potter") {
-		potterQuestions(question, a, b, c, d);
+		getPotterQuestions();
 	
     } else {
 		alert(`Unknown game type ${gameType}`);
@@ -43,7 +43,7 @@ function runGame(gameType) {
 function checkAnswer() {
 	// Checks the answer against the first element in
 	// the returned calculateCorrectAnswer array
-	let userAnswer = parseInt(document.getElementById("answer-box").value);
+	let userAnswer = document.getElementById("answer-box").value;
 	let correctOption = calculateCorrectAnswer();
 	let isCorrect = userAnswer === correctOption[0];
 	if (isCorrect) {
@@ -61,20 +61,13 @@ function calculateCorrectAnswer() {
 	// Gets the quiz questions
     console.log('In here')
     
-	let question = parseInt(document.getElementById("question").textContent);
-	let a = parseInt(document.getElementById("a").textContent);
-    let b = parseInt(document.getElementById("b").textContent);
-	let c = parseInt(document.getElementById("c").textContent);
-	let d = parseInt(document.getElementById("d").textContent);
+	let question = document.getElementById("question").textContent;
+	let a = document.getElementById("a").textContent;
+    let b = document.getElementById("b").textContent;
+	let c = document.getElementById("c").textContent;
+	let d = document.getElementById("d").textContent;
     console.log(question, a, b, c, d)
 
-	if (operator === "potter") {
-		return [question, a, b, c, d ];
-	
-    } else {
-		alert(`Unimplemented operator ${operator}`);
-		throw `Unimplemented operator ${operator}, aborting!`;
-	}
 }
 
 function incrementScore() {
@@ -95,6 +88,9 @@ function incrementWrongAnswer() {
 
 }
 
+function getPotterQuestions() {
+
+}
 
 const potterQuestions = [
     {

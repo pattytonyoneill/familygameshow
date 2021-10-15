@@ -11,22 +11,27 @@
 </head>
 
 <body>
-    
-    <div class="question-area">
+    <div class="game-area">
+		<div class="controls-area">
+            <div class="question-area">
         <span id="question"></span>
-        <span id="optionA"></span>
-        <span id="optionB"></span>
-        <span id="optionC"></span>
-        <span id="optionD"></span>
+        <span id="a" class="option"></span>
+        <span id="b" class="option"></span>
+        <span id="c" class="option"></span>
+        <span id="d" class="option"></span>
         <p class="answer-message">Enter Answer:</p>
         <input id="answer-box" type="text">
         
+            </div>
+        </div>
+
     </div>
-    <div class="score-area">
+        <div class="score-area">
         <p class="scores">Correct Answers: <span id="score">0</span></p>
         <p class="scores">Incorrect Answers: <span id="incorrect">0</span></p>
     </div>
     <button data-type="submit" class="btn btn--gray">Submit Answer</button>
     <script src="assets/js/script.js"></script>
+    
 </body>
 </html>
