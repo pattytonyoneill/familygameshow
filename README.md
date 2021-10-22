@@ -133,6 +133,7 @@
   - Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. I aso had my client test the website to see if it was what they wanted.
 
 ## Known Bugs
+- Had difficulty getting from index.html to quiz.html using buttons for quiz choice. _This was fixed by putting href instead of button._  
 - Had difficulty with getting questions to print on quiz page.  
 
 ## Deployment
