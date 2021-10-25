@@ -61,7 +61,11 @@ function calculateCorrectAnswer() {
 	// Gets the quiz questions
     console.log('In here')
     
-	
+	let question = document.getElementById("question").textContent;
+	let a = document.getElementById("a").textContent;
+    let b = document.getElementById("b").textContent;
+	let c = document.getElementById("c").textContent;
+	let d = document.getElementById("d").textContent;
     console.log(question, a, b, c, d)
 
 }
@@ -86,17 +90,13 @@ function incrementWrongAnswer() {
 
 //**get quiz questions */
 function getPotterQuestions() {
-    document.getElementById("question").innerText
-    document.getElementById("a").innerText
-    document.getElementById("b").innerText
-    document.getElementById("c").innerText
-    document.getElementById("d").innerText
+    
 }
 
 function getMarvelQuestions() {
 
 
-}
+
 function getDisneyQuestions() {
 
 }
