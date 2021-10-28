@@ -94,10 +94,10 @@ function get_random (list) { return list[Math.floor((Math.random()*list.length))
 function getPotterQuestions() {
     let rand = get_random(potterQuestions)
     document.getElementById("question").textContent = rand.question;
-	document.getElementById("a").textContent = a;
-	document.getElementById("b").textContent = b;
-    document.getElementById("c").textContent = c;
-    document.getElementById("d").textContent = d;
+	document.getElementById("a").textContent = rand.a;
+	document.getElementById("b").textContent = rand.b;
+    document.getElementById("c").textContent = rand.c;
+    document.getElementById("d").textContent = rand.d;
 }
 
 function getMarvelQuestions() {
