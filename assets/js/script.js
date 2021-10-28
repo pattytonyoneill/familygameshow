@@ -101,15 +101,30 @@ function getPotterQuestions() {
 }
 
 function getMarvelQuestions() {
-
+    let rand = get_random(marvelQuestions)
+    document.getElementById("question").textContent = rand.question;
+	document.getElementById("a").textContent = rand.a;
+	document.getElementById("b").textContent = rand.b;
+    document.getElementById("c").textContent = rand.c;
+    document.getElementById("d").textContent = rand.d;
 
 }
 function getDisneyQuestions() {
-
+    let rand = get_random(disneyQuestions)
+    document.getElementById("question").textContent = rand.question;
+	document.getElementById("a").textContent = rand.a;
+	document.getElementById("b").textContent = rand.b;
+    document.getElementById("c").textContent = rand.c;
+    document.getElementById("d").textContent = rand.d;
 }
 
 function getTrekQuestions(){
-
+    let rand = get_random(trekQuestions)
+    document.getElementById("question").textContent = rand.question;
+	document.getElementById("a").textContent = rand.a;
+	document.getElementById("b").textContent = rand.b;
+    document.getElementById("c").textContent = rand.c;
+    document.getElementById("d").textContent = rand.d;
 }
 
 //**questions */
