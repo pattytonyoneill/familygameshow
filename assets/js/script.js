@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function runGame(gameType) {
 
-    document.getElementById("potterQuestions")
-
+    document.getElementById("potterQuestions");
+    
 	document.getElementById("answer-box").value = "";
 	document.getElementById("answer-box").focus();
 
@@ -88,15 +88,22 @@ function incrementWrongAnswer() {
 
 }
 
+function get_random (list) { return list[Math.floor((Math.random()*list.length))]; }
 //**get quiz questions */
+
 function getPotterQuestions() {
-    
+    let rand = get_random(potterQuestions)
+    document.getElementById("question").textContent = rand.question;
+	document.getElementById("a").textContent = a;
+	document.getElementById("b").textContent = b;
+    document.getElementById("c").textContent = c;
+    document.getElementById("d").textContent = d;
 }
 
 function getMarvelQuestions() {
 
 
-
+}
 function getDisneyQuestions() {
 
 }
@@ -189,7 +196,7 @@ const potterQuestions = [
         }
     ]
 
-
+    console.log(get_random (potterQuestions))
 const marvelQuestions = [
     {
         question: "What was the first Marvel movie?",
