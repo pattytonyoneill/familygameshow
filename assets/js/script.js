@@ -2,13 +2,15 @@
 
 document.addEventListener("DOMContentLoaded", function() {
 	let buttons = document.getElementsByTagName("button");
+    let currentQuestion = 0
+    let gameType;
 
 	for (let button of buttons) {
 		button.addEventListener("click", function() {
 			if (this.getAttribute("data-type") === "submit") {
 				checkAnswer();
 			} else {
-				let gameType = this.getAttribute("data-type");
+				gameType = this.getAttribute("data-type");
 				runGame(gameType);
 			}
 		});
@@ -41,8 +43,10 @@ function runGame(gameType) {
 }
 
 function checkAnswer() {
+
 	// Checks the answer against the first element in
 	// the returned calculateCorrectAnswer array
+
 	let userAnswer = document.getElementById("answer-box").value;
 	let correctOption = calculateCorrectAnswer();
 	let isCorrect = userAnswer === correctOption[0];
@@ -59,6 +63,7 @@ function checkAnswer() {
 function calculateCorrectAnswer() {
 
 	// Gets the quiz questions
+
     console.log('In here')
     
 	let question = document.getElementById("question").textContent;
@@ -89,6 +94,7 @@ function incrementWrongAnswer() {
 }
 
 function get_random (list) { return list[Math.floor((Math.random()*list.length))]; }
+
 //**get quiz questions */
 
 function getPotterQuestions() {
@@ -128,6 +134,7 @@ function getTrekQuestions(){
 }
 
 //**questions */
+
 const potterQuestions = [
     {
         question: "How many Harry Potter Movies?",
