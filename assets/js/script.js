@@ -45,10 +45,12 @@ document.addEventListener("DOMContentLoaded", function() {
             if (id == correctAnswer) {
                 // its correct
                 alert("Correct")
+                incrementScore()
             }
             else {
                 //its incorrect
                 alert("Incorrect")
+                incrementWrongAnswer();
             }
         })
     })
@@ -75,23 +77,23 @@ function runGame(gameType) {
 
 }
 
-function checkAnswer() {
+//function checkAnswer() {
 
 	// Checks the answer against the first element in
 	// the returned calculateCorrectAnswer array
 
-	let userAnswer = document.getElementById("answer-box").value;
-	let correctOption = calculateCorrectAnswer();
-	let isCorrect = userAnswer === correctOption[0];
-	if (isCorrect) {
-		alert("Hey! You got it right! :D");
-		incrementScore();
-	} else {
-		alert(`Awwww...you answered ${userAnswer}. The correct answer was ${correctOption[0]}!`);
-		incrementWrongAnswer();
-	}
-	runGame(correctOption[1]);
-}
+	//let userAnswer = document.getElementById("answer-box").value;
+	//let correctOption = calculateCorrectAnswer();
+	//let isCorrect = userAnswer === correctOption[0];
+	//if (isCorrect) {
+		//alert("Hey! You got it right! :D");
+		//incrementScore();
+	//} else {
+		//alert(`Awwww...you answered ${userAnswer}. The correct answer was ${correctOption[0]}!`);
+		//incrementWrongAnswer();
+	//}
+	//runGame(correctOption[1]);
+//}
 
 function calculateCorrectAnswer() {
 
