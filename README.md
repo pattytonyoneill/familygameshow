@@ -135,7 +135,8 @@
 ## Known Bugs
 - Had difficulty getting from index.html to quiz.html using buttons for quiz choice. _This was fixed by putting href instead of button._  
 - Had difficulty with getting questions to print on quiz page.  _This was fixed code to randomly choose question and write the answers._
-- Need to have answer be chosen by the user. I was going to have the user enter a letter but may have user either click answer or on radio button. 
+- Need to have answer be chosen by the user. I was going to have the user enter a letter but may have user either click answer or on radio button. _replaced code that was for answer box with code that will allow the user to click on the corect answer_
+
 
 ## Deployment
 
