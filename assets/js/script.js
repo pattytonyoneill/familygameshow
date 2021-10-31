@@ -4,26 +4,6 @@ document.addEventListener("DOMContentLoaded", function() {
 	// let buttons = document.getElementsByTagName("button");
     let currentQuestion = 0
     let gameType;
-
-	// for (let button of buttons) {
-	// 	button.addEventListener("click", function() {
-    //         console.log(true)
-	// 		if (this.getAttribute("data-type") === "submit") {
-	// 			checkAnswer();
-	// 		} else {
-	// 			gameType = this.getAttribute("data-type");
-	// 			runGame(gameType);
-	// 		}
-	// 	});
-	// }
-
-	// document.getElementById("answer-box").addEventListener("keydown", function(event) {
-	// 	if (event.key === "Enter") {
-	// 		checkAnswer();
-	// 	}
-	// });
-
-
       
     // get all buttons  
     const options = document.querySelectorAll('.option');
@@ -76,24 +56,6 @@ function runGame(gameType) {
 	}
 
 }
-
-//function checkAnswer() {
-
-	// Checks the answer against the first element in
-	// the returned calculateCorrectAnswer array
-
-	//let userAnswer = document.getElementById("answer-box").value;
-	//let correctOption = calculateCorrectAnswer();
-	//let isCorrect = userAnswer === correctOption[0];
-	//if (isCorrect) {
-		//alert("Hey! You got it right! :D");
-		//incrementScore();
-	//} else {
-		//alert(`Awwww...you answered ${userAnswer}. The correct answer was ${correctOption[0]}!`);
-		//incrementWrongAnswer();
-	//}
-	//runGame(correctOption[1]);
-//}
 
 function calculateCorrectAnswer() {
 
