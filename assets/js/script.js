@@ -1,29 +1,62 @@
 // Get the button elements and add event listeners to them
 
 document.addEventListener("DOMContentLoaded", function() {
-	let buttons = document.getElementsByTagName("button");
+	// let buttons = document.getElementsByTagName("button");
     let currentQuestion = 0
     let gameType;
 
-	for (let button of buttons) {
-		button.addEventListener("click", function() {
-			if (this.getAttribute("data-type") === "submit") {
-				checkAnswer();
-			} else {
-				gameType = this.getAttribute("data-type");
-				runGame(gameType);
-			}
-		});
-	}
+	// for (let button of buttons) {
+	// 	button.addEventListener("click", function() {
+    //         console.log(true)
+	// 		if (this.getAttribute("data-type") === "submit") {
+	// 			checkAnswer();
+	// 		} else {
+	// 			gameType = this.getAttribute("data-type");
+	// 			runGame(gameType);
+	// 		}
+	// 	});
+	// }
 
-	document.getElementById("answer-box").addEventListener("keydown", function(event) {
-		if (event.key === "Enter") {
-			checkAnswer();
-		}
-	});
+	// document.getElementById("answer-box").addEventListener("keydown", function(event) {
+	// 	if (event.key === "Enter") {
+	// 		checkAnswer();
+	// 	}
+	// });
+
+
+      
+    // get all buttons  
+    const options = document.querySelectorAll('.option');
+    // for each button
+    options.forEach(option => {
+        // add an event listener of click - pass in the click event
+        option.addEventListener('click', event => {
+
+            // get the id of the clicked option
+            const id = event.target.id;
+            // get the correct option of the current question
+            const correctAnswer = potterQuestions[currentQuestion].correctOption;
+
+            // log them for testing
+            console.log("clicked option: ", id)
+            console.log("Correct answer: ", correctAnswer)
+
+            // check if correct
+            if (id == correctAnswer) {
+                // its correct
+                alert("Correct")
+            }
+            else {
+                //its incorrect
+                alert("Incorrect")
+            }
+        })
+    })
+
 
 	runGame("potter");
 });
+
 
 function runGame(gameType) {
 
@@ -133,7 +166,7 @@ function getTrekQuestions(){
     document.getElementById("d").textContent = rand.d;
 }
 
-//**questions */
+          //**questions */
 
 const potterQuestions = [
     {

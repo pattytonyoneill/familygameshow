@@ -46,6 +46,12 @@ ul {
     padding: 0 15px;
 }
 
+.option {
+    cursor: pointer;
+    border: 1px solid black;
+    margin: 5px;
+}
+
 .score-area {
     margin: 5px auto;
     width: 60%;
