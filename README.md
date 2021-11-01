@@ -147,10 +147,11 @@
 
 The live link can be found here - https://pattytonyoneill.github.io/familygameshow/
 
-## Local Deployment
+### Local Deployment
 
 In order to make a local copy of this repository, you can clone it by typing the following into your IDE Terminal:
 
+- `git clone https://github.com/pattytonyoneill/familygameshow.git`
 
 Alternatively, if you use Gitpod, you can [click here](https://gitpod.io/#https://github.com/pattytonyoneill/familygameshow)
 

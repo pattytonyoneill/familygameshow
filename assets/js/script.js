@@ -1,8 +1,13 @@
+/* jshint esversion: 8 */
+
+// get the correct option of the current question
+let correctAnswer = "";
+
 // Get the button elements and add event listeners to them
 
 document.addEventListener("DOMContentLoaded", function () {
     // let buttons = document.getElementsByTagName("button");
-    let currentQuestion = 0
+    let currentQuestion = 0;
     let gameType;
 
 
@@ -14,23 +19,23 @@ document.addEventListener("DOMContentLoaded", function () {
         option.addEventListener('click', event => {
 
             // get the id of the clicked option
-            const id = event.target.id;
-            // get the correct option of the current question
-            const correctAnswer = potterQuestions[currentQuestion].correctOption;
+            let id = event.target.id;
+
 
             // log them for testing
-            console.log("clicked option: ", id)
-            console.log("Correct answer: ", correctAnswer)
+            console.log("clicked option: ", id);
+            console.log("Correct answer: ", correctAnswer);
 
             // check if correct
             if (id == correctAnswer) {
                 // its correct
-                alert("Correct")
-                incrementScore()
+                alert("Correct");
+                incrementScore();
+                getPotterQuestions();
             }
             else {
                 //its incorrect
-                alert("Incorrect")
+                alert("Incorrect");
                 incrementWrongAnswer();
             }
         })
@@ -103,13 +108,15 @@ function get_random(list) { return list[Math.floor((Math.random() * list.length)
 //**get quiz questions */
 
 function getPotterQuestions() {
-    let rand = get_random(potterQuestions)
+    let rand = get_random(potterQuestions);
+    console.log(rand);
+    correctAnswer = rand.correctOption;
     document.getElementById("question").textContent = rand.question;
     document.getElementById("a").textContent = rand.a;
     document.getElementById("b").textContent = rand.b;
     document.getElementById("c").textContent = rand.c;
     document.getElementById("d").textContent = rand.d;
-    console.log(get_random(potterQuestions))
+    console.log(get_random(potterQuestions));
 }
 
 function getMarvelQuestions() {
