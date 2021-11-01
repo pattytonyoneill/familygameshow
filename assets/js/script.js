@@ -238,6 +238,7 @@ const potterQuestions = [
         d: "Charms",
         correctOption: "b"
     },
+    console.log(potterQuestions.splice(0, 1));
 ];
 
 const marvelQuestions = [
