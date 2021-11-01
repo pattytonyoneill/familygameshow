@@ -44,8 +44,7 @@ function runGame(gameType) {
 
     document.getElementById("potterQuestions");
     
-	document.getElementById("answer-box").value = "";
-	document.getElementById("answer-box").focus();
+	
 
 	if (gameType === "potter") {
 		getPotterQuestions();
