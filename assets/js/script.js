@@ -2,6 +2,8 @@
 
 // get the correct option of the current question
 let correctAnswer = "";
+let gameQuestions=[ ];
+
 
 // Get the button elements and add event listeners to them
 
@@ -32,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("Correct");
                 incrementScore();
                 getPotterQuestions();
+                
             }
             else {
                 //its incorrect
@@ -42,7 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-
+    gameQuestions = potterQuestions.splice();
+    console.log(gameQuestions);
     runGame("potter");
 });
 
@@ -54,9 +58,8 @@ function runGame(gameType) {
     document.getElementById("disneyQuestions");
     document.getElementById("trekQuestions");
 
-
-
     if (gameType === "potter") {
+        gameQuestions = [...potterQuestions];
         getPotterQuestions();
     } else if (gameType === "marvel") {
         getMarvelQuestions();
@@ -68,21 +71,6 @@ function runGame(gameType) {
         alert(`Unknown game type ${gameType}`);
         throw `Unknown game type ${gameType}, aborting!`;
     }
-
-}
-
-function calculateCorrectAnswer() {
-
-    // Gets the quiz questions
-
-    console.log('In here');
-
-    let question = document.getElementById("question").textContent;
-    let a = document.getElementById("a").textContent;
-    let b = document.getElementById("b").textContent;
-    let c = document.getElementById("c").textContent;
-    let d = document.getElementById("d").textContent;
-    console.log(question, a, b, c, d);
 
 }
 
@@ -109,7 +97,8 @@ function get_random(list) { return list[Math.floor((Math.random() * list.length)
 //**get quiz questions */
 
 function getPotterQuestions() {
-    let rand = get_random(potterQuestions);
+    
+    let rand = get_random(gameQuestions);
     console.log(rand);
     correctAnswer = rand.correctOption;
     document.getElementById("question").textContent = rand.question;
@@ -117,7 +106,9 @@ function getPotterQuestions() {
     document.getElementById("b").textContent = rand.b;
     document.getElementById("c").textContent = rand.c;
     document.getElementById("d").textContent = rand.d;
-    console.log(get_random(potterQuestions));
+    console.log(get_random(gameQuestions));
+
+    
 }
 
 function getMarvelQuestions() {
@@ -238,8 +229,10 @@ const potterQuestions = [
         d: "Charms",
         correctOption: "b"
     },
-    console.log(potterQuestions.splice(0, 1));
+
 ];
+
+
 
 const marvelQuestions = [
     {
