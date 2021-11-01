@@ -37,9 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 //its incorrect
                 alert("Incorrect");
                 incrementWrongAnswer();
+                getPotterQuestions();
             }
-        })
-    })
+        });
+    });
 
 
     runGame("potter");
@@ -74,14 +75,14 @@ function calculateCorrectAnswer() {
 
     // Gets the quiz questions
 
-    console.log('In here')
+    console.log('In here');
 
     let question = document.getElementById("question").textContent;
     let a = document.getElementById("a").textContent;
     let b = document.getElementById("b").textContent;
     let c = document.getElementById("c").textContent;
     let d = document.getElementById("d").textContent;
-    console.log(question, a, b, c, d)
+    console.log(question, a, b, c, d);
 
 }
 
@@ -120,32 +121,38 @@ function getPotterQuestions() {
 }
 
 function getMarvelQuestions() {
-    let rand = get_random(marvelQuestions)
+    let rand = get_random(marvelQuestions);
+    console.log(rand);
+    correctAnswer = rand.correctOption;
     document.getElementById("question").textContent = rand.question;
     document.getElementById("a").textContent = rand.a;
     document.getElementById("b").textContent = rand.b;
     document.getElementById("c").textContent = rand.c;
     document.getElementById("d").textContent = rand.d;
-    console.log(get_random(marvelQuestions))
+    console.log(get_random(marvelQuestions));
 }
 function getDisneyQuestions() {
-    let rand = get_random(disneyQuestions)
+    let rand = get_random(disneyQuestions);
+    console.log(rand);
+    correctAnswer = rand.correctOption;
     document.getElementById("question").textContent = rand.question;
     document.getElementById("a").textContent = rand.a;
     document.getElementById("b").textContent = rand.b;
     document.getElementById("c").textContent = rand.c;
     document.getElementById("d").textContent = rand.d;
-    console.log(get_random(disneyQuestions))
+    console.log(get_random(disneyQuestions));
 }
 
 function getTrekQuestions() {
-    let rand = get_random(trekQuestions)
+    let rand = get_random(trekQuestions);
+    console.log(rand);
+    correctAnswer = rand.correctOption;
     document.getElementById("question").textContent = rand.question;
     document.getElementById("a").textContent = rand.a;
     document.getElementById("b").textContent = rand.b;
     document.getElementById("c").textContent = rand.c;
     document.getElementById("d").textContent = rand.d;
-    console.log(get_random(trekQuestions))
+    console.log(get_random(trekQuestions));
 }
 
 //**questions */
