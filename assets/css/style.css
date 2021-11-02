@@ -1,5 +1,4 @@
-body {
-    
+body { 
     background-color: lightblue;
     font-family: "Raleway", sans-serif;
     color: #4f4461;
@@ -235,8 +234,14 @@ ul {
 }
 
 @media (max-width: 320px) {
+    .heading {
+        font-size: small;
+    }
+    ul {
+        font-size: small;
+    }
     .game-area {
-        height: 70vh;
+        height: 50vh;
     }
 
     .controls-area {
@@ -249,6 +254,13 @@ ul {
     }
     .question-area {
         padding: 10px 0;
+        font-size: 20px;
+    }
+    .scores {
+        font-size: 20px;
+    }
+    .score-area {
+        font-size: 20px;
     }
 
 }

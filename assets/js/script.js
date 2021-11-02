@@ -3,7 +3,7 @@
 // get the correct option of the current question
 let correctAnswer = "";
 let gameQuestions=[ ];
-current_question_index = 0
+current_question_index = 0;
 
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
@@ -92,7 +92,7 @@ function incrementWrongAnswer() {
 function get_random(list) {
     list_index = Math.floor(Math.random() * list.length);
     current_question = list[list_index];
-    console.log("ARRAY LENGTH, ", list.length)
+    console.log("ARRAY LENGTH, ", list.length);
     return current_question;
     }
 
