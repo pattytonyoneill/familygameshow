@@ -4,15 +4,10 @@
 let correctAnswer = "";
 let gameQuestions=[ ];
 
-
 // Get the button elements and add event listeners to them
 
 document.addEventListener("DOMContentLoaded", function () {
-    // let buttons = document.getElementsByTagName("button");
-    let currentQuestion = 0;
-    let gameType;
-
-
+   
     // get all buttons  
     const options = document.querySelectorAll('.option');
     // for each button
@@ -22,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // get the id of the clicked option
             let id = event.target.id;
-
 
             // log them for testing
             console.log("clicked option: ", id);
@@ -34,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert("Correct");
                 incrementScore();
                 getPotterQuestions();
-                
             }
             else {
                 //its incorrect
@@ -44,12 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
-
     gameQuestions = potterQuestions.splice();
     console.log(gameQuestions);
     runGame("potter");
 });
-
 
 function runGame(gameType) {
 
@@ -62,10 +53,13 @@ function runGame(gameType) {
         gameQuestions = [...potterQuestions];
         getPotterQuestions();
     } else if (gameType === "marvel") {
+        gameQuestions = [...marvelQuestions];
         getMarvelQuestions();
     } else if (gameType === "disney") {
+        gameQuestions = [...disneyQuestions];
         getDisneyQuestions();
     } else if (gameType === "trek") {
+        gameQuestions = [...trekQuestions];
         getTrekQuestions();
     } else {
         alert(`Unknown game type ${gameType}`);
@@ -75,29 +69,22 @@ function runGame(gameType) {
 }
 
 function incrementScore() {
-
     // Gets the current score from the DOM and increments it
-
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
-
 }
 
 function incrementWrongAnswer() {
-
     // Gets the current tally of incorrect answers from the DOM and increments it
-
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
-
 }
 
 function get_random(list) { return list[Math.floor((Math.random() * list.length))]; }
 
 //**get quiz questions */
 
-function getPotterQuestions() {
-    
+function getPotterQuestions() {  
     let rand = get_random(gameQuestions);
     console.log(rand);
     correctAnswer = rand.correctOption;
@@ -107,12 +94,10 @@ function getPotterQuestions() {
     document.getElementById("c").textContent = rand.c;
     document.getElementById("d").textContent = rand.d;
     console.log(get_random(gameQuestions));
-
-    
 }
 
 function getMarvelQuestions() {
-    let rand = get_random(marvelQuestions);
+    let rand = get_random(gameQuestions);
     console.log(rand);
     correctAnswer = rand.correctOption;
     document.getElementById("question").textContent = rand.question;
@@ -120,10 +105,11 @@ function getMarvelQuestions() {
     document.getElementById("b").textContent = rand.b;
     document.getElementById("c").textContent = rand.c;
     document.getElementById("d").textContent = rand.d;
-    console.log(get_random(marvelQuestions));
+    console.log(get_random(gameQuestions));
 }
+
 function getDisneyQuestions() {
-    let rand = get_random(disneyQuestions);
+    let rand = get_random(gameQuestions);
     console.log(rand);
     correctAnswer = rand.correctOption;
     document.getElementById("question").textContent = rand.question;
@@ -131,11 +117,11 @@ function getDisneyQuestions() {
     document.getElementById("b").textContent = rand.b;
     document.getElementById("c").textContent = rand.c;
     document.getElementById("d").textContent = rand.d;
-    console.log(get_random(disneyQuestions));
+    console.log(get_random(gameQuestions));
 }
 
 function getTrekQuestions() {
-    let rand = get_random(trekQuestions);
+    let rand = get_random(gameQuestions);
     console.log(rand);
     correctAnswer = rand.correctOption;
     document.getElementById("question").textContent = rand.question;
@@ -143,7 +129,7 @@ function getTrekQuestions() {
     document.getElementById("b").textContent = rand.b;
     document.getElementById("c").textContent = rand.c;
     document.getElementById("d").textContent = rand.d;
-    console.log(get_random(trekQuestions));
+    console.log(get_random(gameQuestions));
 }
 
 //**questions */
@@ -231,8 +217,6 @@ const potterQuestions = [
     },
 
 ];
-
-
 
 const marvelQuestions = [
     {
