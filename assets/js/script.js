@@ -3,6 +3,17 @@
 // get the correct option of the current question
 let correctAnswer = "";
 let gameQuestions=[ ];
+current_question_index = 0
+
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+    }
+    return array;
+    }
 
 // Get the button elements and add event listeners to them
 
@@ -18,27 +29,25 @@ document.addEventListener("DOMContentLoaded", function () {
             // get the id of the clicked option
             let id = event.target.id;
 
-            // log them for testing
-            console.log("clicked option: ", id);
-            console.log("Correct answer: ", correctAnswer);
-
             // check if correct
             if (id == correctAnswer) {
                 // its correct
-                alert("Correct");
+                alert("Hey! You got it right! :D");
                 incrementScore();
+                gameQuestions.splice(current_question_index, 1);
                 getPotterQuestions();
             }
             else {
                 //its incorrect
-                alert("Incorrect");
+                alert("Awwww...You got it wrong!" );
                 incrementWrongAnswer();
+                gameQuestions.splice(current_question_index, 1);
                 getPotterQuestions();
             }
+            console.log(gameQuestions);
         });
     });
-    gameQuestions = potterQuestions.splice();
-    console.log(gameQuestions);
+    
     runGame("potter");
 });
 
@@ -50,16 +59,16 @@ function runGame(gameType) {
     document.getElementById("trekQuestions");
 
     if (gameType === "potter") {
-        gameQuestions = [...potterQuestions];
+        gameQuestions= shuffleArray(potterQuestions);
         getPotterQuestions();
     } else if (gameType === "marvel") {
-        gameQuestions = [...marvelQuestions];
+        gameQuestions= shuffleArray([...marvelQuestions]);
         getMarvelQuestions();
     } else if (gameType === "disney") {
-        gameQuestions = [...disneyQuestions];
+        gameQuestions= shuffleArray([...disneyQuestions]);
         getDisneyQuestions();
     } else if (gameType === "trek") {
-        gameQuestions = [...trekQuestions];
+        gameQuestions= shuffleArray([...trekQuestions]);
         getTrekQuestions();
     } else {
         alert(`Unknown game type ${gameType}`);
@@ -80,7 +89,12 @@ function incrementWrongAnswer() {
     document.getElementById("incorrect").innerText = ++oldScore;
 }
 
-function get_random(list) { return list[Math.floor((Math.random() * list.length))]; }
+function get_random(list) {
+    list_index = Math.floor(Math.random() * list.length);
+    current_question = list[list_index];
+    console.log("ARRAY LENGTH, ", list.length)
+    return current_question;
+    }
 
 //**get quiz questions */
 
@@ -93,7 +107,6 @@ function getPotterQuestions() {
     document.getElementById("b").textContent = rand.b;
     document.getElementById("c").textContent = rand.c;
     document.getElementById("d").textContent = rand.d;
-    console.log(get_random(gameQuestions));
 }
 
 function getMarvelQuestions() {
