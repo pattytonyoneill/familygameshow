@@ -34,14 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 // its correct
                 alert("Hey! You got it right! :D");
                 incrementScore();
-                gameQuestions.splice(current_question_index, 1);
                 getPotterQuestions();
             }
             else {
                 //its incorrect
                 alert("Awwww...You got it wrong!" );
                 incrementWrongAnswer();
-                gameQuestions.splice(current_question_index, 1);
                 getPotterQuestions();
             }
             console.log(gameQuestions);
@@ -92,6 +90,7 @@ function incrementWrongAnswer() {
 function get_random(list) {
     list_index = Math.floor(Math.random() * list.length);
     current_question = list[list_index];
+    gameQuestions.splice(list_index, 1);
     console.log("ARRAY LENGTH, ", list.length);
     return current_question;
     }
