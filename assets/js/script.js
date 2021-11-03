@@ -93,7 +93,7 @@ function get_random(list) {
     gameQuestions.splice(list_index, 1);
     console.log("ARRAY LENGTH, ", list.length);
     return current_question;
-    }
+    };
 
 //**get quiz questions */
 
