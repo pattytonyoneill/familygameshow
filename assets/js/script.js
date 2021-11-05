@@ -17,37 +17,42 @@ function shuffleArray(array) {
 
 // Get the button elements and add event listeners to them
 
-document.addEventListener("DOMContentLoaded", function () {
-   
-    // get all buttons  
-    const options = document.querySelectorAll('.option');
-    // for each button
-    options.forEach(option => {
-        // add an event listener of click - pass in the click event
-        option.addEventListener('click', event => {
+document.addEventListener('DOMContentLoaded', function () {
+	// get all buttons
+	const options = document.querySelectorAll('.option');
+	// for each button
+	options.forEach(option => {
+		// add an event listener of click - pass in the click event
+		option.addEventListener('click', event => {
+			// get the id of the clicked option
+			let id = event.target.id;
 
-            // get the id of the clicked option
-            let id = event.target.id;
+			// check if correct
+			if (id == correctAnswer) {
+				// its correct
+				alert('Hey! You got it right! :D');
+				incrementScore();
+				if (gameQuestions.length > 0) {
+				} else {
+					window.location.href = 'index.html';
+				}
+				getPotterQuestions();
+			} else {
+				//its incorrect
+				alert('Awwww...You got it wrong!');
+				incrementWrongAnswer();
+				if (gameQuestions.length > 0) {
+					getPotterQuestions();
+				} else {
+					window.location.href = 'index.html';
+				}
+			}
+		});
+	});
 
-            // check if correct
-            if (id == correctAnswer) {
-                // its correct
-                alert("Hey! You got it right! :D");
-                incrementScore();
-                getPotterQuestions();
-            }
-            else {
-                //its incorrect
-                alert("Awwww...You got it wrong!" );
-                incrementWrongAnswer();
-                getPotterQuestions();
-            }
-            console.log(gameQuestions);
-        });
-    });
-    
-    runGame("potter");
+	runGame('potter');
 });
+
 
 function runGame(gameType) {
 
@@ -87,17 +92,15 @@ function incrementWrongAnswer() {
     document.getElementById("incorrect").innerText = ++oldScore;
 }
 
+
 function get_random(list) {
-	if (gameQuestions.length > 0) {
-		list_index = Math.floor(Math.random() * list.length);
-		current_question = list[list_index];
-		gameQuestions.splice(list_index, 1);
-		console.log('ARRAY LENGTH, ', list.length);
-		return current_question;
-	} else {
-		console.log('NO MORE QUESTIONS');
-	}
+	list_index = Math.floor(Math.random() * list.length);
+	current_question = list[list_index];
+	gameQuestions.splice(list_index, 1);
+	console.log('ARRAY LENGTH, ', list.length);
+	return current_question;
 }
+
 //**get quiz questions */
 
 function getPotterQuestions() {  

@@ -173,5 +173,5 @@ _Images came from pixabay.com_
 ### Acknowlegements
 - _My Mentor for his help and feedback._
 - _Tutor support at Code Institute_
-- _Clients for their help with input on colors, logo and images that they wanted used on the webpage._
+- _Nick and Jack Conroy on slack for their help and feedback._
 - _Family for help with help and feedback on website as a use_
