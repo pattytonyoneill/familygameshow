@@ -1,4 +1,6 @@
 # Family Game Show
+![image](images/responsive1.jpg)
+![image](images/responsive2.jpg)
 
 ## User Stories:
 - _First time Visitor Goals_
