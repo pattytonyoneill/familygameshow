@@ -139,7 +139,8 @@
 - Had difficulty with getting questions to print on quiz page.  _This was fixed code to randomly choose question and write the answers._
 - Need to have answer be chosen by the user. I was going to have the user enter a letter but may have user either click answer or on radio button. _replaced code that was for answer box with code that will allow the user to click on the correct answer_
 - Answers were marked incorrectly. _I put code in to let previous questions answer be cleared before reading next question._
-- Questions don't end when the 10th question is asked _ _
+- Questions don't end when the 10th question is asked _Wrote code to get the game to end after 10 questions and return the user to the page with the choice of type of game so they can replay or change game type._
+- Other games are not connected _ _
 
 ## Deployment
 
