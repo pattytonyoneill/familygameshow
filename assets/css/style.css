@@ -260,7 +260,7 @@ ul {
         font-size: 10px;
     }
     ul {
-        font-size: 8px;
+        font-size: 8.5px;
     }
     .game-area {
         height: 50vh;
@@ -273,7 +273,7 @@ ul {
 
     .controls-area2 {
         width: 75%;
-        margin: 25px auto;
+        margin: 20px auto;
     }
 
     .btn--big {
