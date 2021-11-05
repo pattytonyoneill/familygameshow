@@ -257,27 +257,23 @@ ul {
 
 @media (max-width: 320px) {
     .heading {
-        font-size: small;
+        font-size: 10px;
     }
     ul {
-        font-size: small;
+        font-size: 8px;
     }
     .game-area {
         height: 50vh;
     }
 
     .controls-area1 {
-        width: 75%;
-        margin: 10px auto;
+        width: 100%;
+        margin: 25px auto;
     }
 
     .controls-area2 {
         width: 75%;
-        margin: 10px auto;
-    }
-
-    .instructions {
-        font-size: 15px;
+        margin: 25px auto;
     }
 
     .btn--big {
