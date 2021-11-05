@@ -88,12 +88,15 @@ function incrementWrongAnswer() {
 }
 
 function get_random(list) {
+    while (gameQuestions.length < 0);
+    {
     list_index = Math.floor(Math.random() * list.length);
     current_question = list[list_index];
     gameQuestions.splice(list_index, 1);
     console.log("ARRAY LENGTH, ", list.length);
     return current_question;
     };
+};
 
 //**get quiz questions */
 

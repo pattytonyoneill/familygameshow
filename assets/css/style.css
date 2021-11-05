@@ -57,9 +57,22 @@ ul {
     font-size: 1.2rem;
 }
 
-.controls-area {
+.instructions {
+    width: 85%;
+}
+
+.controls-area1 {
     width: 85%;
     margin: 30px auto;
+}
+
+.controls-area2 {
+    width: 85%;
+    margin: 30px auto;
+}
+
+.instructions {
+    font: size 30px;;
 }
 
 #score {
@@ -179,8 +192,17 @@ ul {
 /* --------- Media queries */
 
 @media (max-width: 414px) {
-    .controls-area {
+    .controls-area1 {
         width: 100%;
+    }
+
+    .controls-area2 {
+        width: 100%;
+    }
+
+    .instructions {
+        width: 100%;
+        font-size: 20px;
     }
 
     .btn--big {
@@ -244,9 +266,18 @@ ul {
         height: 50vh;
     }
 
-    .controls-area {
+    .controls-area1 {
         width: 75%;
         margin: 10px auto;
+    }
+
+    .controls-area2 {
+        width: 75%;
+        margin: 10px auto;
+    }
+
+    .instructions {
+        font-size: 15px;
     }
 
     .btn--big {
