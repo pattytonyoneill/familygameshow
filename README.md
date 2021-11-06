@@ -77,37 +77,37 @@
 
 - Mutiplayer function
 - Ability to go between quizes
-= Ability to compare your score to others that have played the game.
-= Add a timed component to the game.
+- Ability to compare your score to others that have played the game.
+- Add a timed component to the game.
 
 ## Testing User Stories from User Experience Section
 
 - _First time Visitor Goals_
 
   - _As a first time user of this site, I would like to be able to easily decifer the main purpose of the game_
-  -- The instructions on the page quickly and easily explain how the game works and your choices that are above it are listed.
+  - - The instructions on the page quickly and easily explain how the game works and your choices that are above it are listed.
 
     - ![image](testing-wireframes/testing_microsoft.edge.jpg)
 
   - _As a first time user, I would like to be able to easily navigate the game_
-  -- The buttons on the first page take you quickly and easily to the quiz of your choice. When you get to the quiz you click on the answer and are told if the question is right or wrong. 
+  - - The buttons on the first page take you quickly and easily to the quiz of your choice. When you get to the quiz you click on the answer and are told if the question is right or wrong. 
 
     - ![image](testing-wireframes/testing_microsoft.edge.jpg)
 
   - _As a first time user, I would like to see my score_ 
-  -- The score is easily visable at the bottom of the quiz page.
+  - - The score is easily visable at the bottom of the quiz page.
 
     - ![image](testing-wireframes/testing_score.jpg)
 
 - _Returning Visitor Goals:_ 
 
   - _As a returning visitor, I would like to be able to choose a different category of questions_
-  -- This is possible once you end the game. All you need to do is choose a different category of questions.
+  - - This is possible once you end the game. All you need to do is choose a different category of questions.
 
      - ![image](testing-wireframes/testing_brave.jpeg)
 
   - _As a returning visitor, I would like to be able to take the quiz again and possibly do better than the first time_ 
-  -- After completing the quiz you can easily retake the quiz and try and achieve a higher score.
+  - - After completing the quiz you can easily retake the quiz and try and achieve a higher score.
 
     - ![image](testing-wireframes/testing_brave.jpeg)
 
