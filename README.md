@@ -30,20 +30,20 @@
 - [Am I Responsive?](http://ami.responsivedesign.is/) Used on Readme to show how the application looks on different devices.
 - [Pixabay](https://pixabay.com/) Used for pictures for the background of the project. (not sure if I will be using them)
 
-- _Jshint_ - 
-  - 
+- _Jshint_  
+  - ![image]()
 
-- _W3C Markup Validator Results_ - 
-  - 
+- _W3C Markup Validator Results_ 
+  - ![image]()
 
 - _Jigsaw Validator Results_
-  - 
+  - ![image]()
 
 - _Design:_
   - _Color Scheme:_ 
 
 - _Typography:_
-  - 
+  - Raleway is the font used in this website san-serif is the backup in case one of the font does not import correctly. 
 
 - _Imagery:_
 

@@ -9,13 +9,13 @@ body {
 ul {
     color:darkslateblue ;
     text-align: left;
-    font-size:  2.9 rem;
+    font-size:  15px;
     margin-top: 65px;
 }
 /* --------- Heading */
 
 .heading {
-    color: red;
+    color: black;
     text-align: center;
     font-size: 2.5rem;
 }
@@ -59,6 +59,7 @@ ul {
 
 .instructions {
     width: 85%;
+    font: 15px;
 }
 
 .controls-area1 {
@@ -69,10 +70,6 @@ ul {
 .controls-area2 {
     width: 85%;
     margin: 30px auto;
-}
-
-.instructions {
-    font: size 30px;;
 }
 
 #score {
