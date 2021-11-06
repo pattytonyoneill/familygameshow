@@ -25,10 +25,13 @@
 - [Git](https://git-scm.com): used to utilize the Gitpod terminal to commit to Git and Push to GitHub
 - [GitHub](https://github.com/): used to store project code after being pushed from Git
 - [Balsamiq](https://balsamiq.com/) Used to create the wire frame for the project during the planning phase
-- [ColorSpace](https://mycolor.space) 
+- [ColorSpace](https://mycolor.space) Used as a reference of colors that could be used.
 - [ImageColorPicker](https://imagecolorpicker.com/en/user/shared-palette?id=308363078299288132): 
-- [Am I Responsive?](http://ami.responsivedesign.is/)
-- [Pixabay](https://pixabay.com/)
+- [Am I Responsive?](http://ami.responsivedesign.is/) Used on Readme to show how the application looks on different devices.
+- [Pixabay](https://pixabay.com/) Used for pictures for the background of the project. (not sure if I will be using them)
+
+- _Jshint_ - 
+  - 
 
 - _W3C Markup Validator Results_ - 
   - 
@@ -77,7 +80,7 @@
 
 - Mutiplayer function
 - Ability to go between quizes
-- Ability to compare your score to others that have played the game.
+- Ability to compare your score to others that have played the game with a score page.
 - Add a timed component to the game.
 
 ## Testing User Stories from User Experience Section
@@ -134,6 +137,7 @@
 - Had difficulty with getting questions to print on quiz page.  _This was fixed code to randomly choose question and write the answers._
 - Need to have answer be chosen by the user. I was going to have the user enter a letter but may have user either click answer or on radio button. _replaced code that was for answer box with code that will allow the user to click on the correct answer_
 - Answers were marked incorrectly. _I put code in to let previous questions answer be cleared before reading next question._
+- Difficulty getting questions to end after 10 questions. _First I had an endless line withe the last question over and over at end of quiz.  Next I got it to stop at 9 instead of 10. Finally I added code to bring the user back to the index.html page to be able to either retake the quiz or choose another quiz._
 - Questions don't end when the 10th question is asked _Wrote code to get the game to end after 10 questions and return the user to the page with the choice of type of game so they can replay or change game type._
 - Other games are not connected _ _
 

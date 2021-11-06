@@ -5,6 +5,7 @@ let correctAnswer = "";
 let gameQuestions=[ ];
 current_question_index = 0;
 
+//shuffle array of questions
 function shuffleArray(array) {
     for (var i = array.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
@@ -16,7 +17,6 @@ function shuffleArray(array) {
     }
 
 // Get the button elements and add event listeners to them
-
 document.addEventListener('DOMContentLoaded', function () {
 	// get all buttons
 	const options = document.querySelectorAll('.option');
@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		option.addEventListener('click', event => {
 			// get the id of the clicked option
 			let id = event.target.id;
-
 			// check if correct
 			if (id == correctAnswer) {
 				// its correct
@@ -49,11 +48,10 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	});
-
 	runGame('potter');
 });
 
-
+//run game based on type chosen
 function runGame(gameType) {
 
     document.getElementById("potterQuestions");
@@ -81,18 +79,18 @@ function runGame(gameType) {
 }
 
 function incrementScore() {
-    // Gets the current score from the DOM and increments it
+    // Gets the current score from the DOM and increase it
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 }
 
 function incrementWrongAnswer() {
-    // Gets the current tally of incorrect answers from the DOM and increments it
+    // Gets the current tally of incorrect answers from the DOM and increase it
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
 }
 
-
+//gets a random questin and removes a question from list
 function get_random(list) {
 	list_index = Math.floor(Math.random() * list.length);
 	current_question = list[list_index];
@@ -102,7 +100,6 @@ function get_random(list) {
 }
 
 //**get quiz questions */
-
 function getPotterQuestions() {  
     let rand = get_random(gameQuestions);
     console.log(rand);
@@ -151,7 +148,6 @@ function getTrekQuestions() {
 }
 
 //**questions */
-
 const potterQuestions = [
     {
         question: "How many Harry Potter Movies?",
