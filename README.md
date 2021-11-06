@@ -41,9 +41,6 @@
 - _Jigsaw Validator Results_
   - ![image](testing-wireframes/testing_css.png)
 
-- _Design:_
-  - _Color Scheme:_ 
-
 - _Typography:_
   - Raleway is the font used in this website san-serif is the backup in case one of the font does not import correctly. 
 
@@ -169,7 +166,6 @@ Alternatively, if you use Gitpod, you can [click here](https://gitpod.io/#https:
 - _All content written by the developer._
 
 ### Media
-_Images came from pixabay.com_
 _Icons used came from fontawesome_
 
 
