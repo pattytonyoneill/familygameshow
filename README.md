@@ -57,7 +57,8 @@
 
   - _Desktop_
 
-    - ![image]()
+    - ![image](testing-wireframes/testing_brave.jpeg)
+
   - _Tablet_
 
     - ![image]()
@@ -111,7 +112,7 @@
   - _As a returning visitor, I would like to be able to take the quiz again and possibly do better than the first time_ 
   - - After completing the quiz you can easily retake the quiz and try and achieve a higher score.
 
-    - ![image](testing-wireframes/testing_brave.jpeg)
+    - - ![image](testing-wireframes/testing_microsoft.edge.jpg)
 
 ## Further Testing
   - The Website was tested on: 
@@ -129,7 +130,7 @@
 
   - The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy Tablet and Samsung Galaxy 7, Samsung Galaxy 8, Samsung A12.
   - A large amount of testing was done to ensure that all of the pages were linking correctly. 
-  - Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. I aso had my client test the website to see if it was what they wanted.
+  - Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues. 
 
 ## Known Bugs
 - Had difficulty getting from index.html to quiz.html using buttons for quiz choice. _This was fixed by putting href instead of button._  
@@ -138,7 +139,7 @@
 - Answers were marked incorrectly. _I put code in to let previous questions answer be cleared before reading next question._
 - Difficulty getting questions to end after 10 questions. _First I had an endless line withe the last question over and over at end of quiz.  Next I got it to stop at 9 instead of 10. Finally I added code to bring the user back to the index.html page to be able to either retake the quiz or choose another quiz._
 - Questions don't end when the 10th question is asked _Wrote code to get the game to end after 10 questions and return the user to the page with the choice of type of game so they can replay or change game type._
-- Other games are not connected _ _
+- Other games are not connected _This was done by connecting code and condensing my code_
 
 ## Deployment
 
