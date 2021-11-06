@@ -65,70 +65,65 @@
 
 - _Interactive Elements_
 
-  -  
+  -  The buttons on this page make it possible to easily navigate to the game that the user wishes to play. 
 
-    - ![image]()
+    - ![image](testing-wireframes/testing_microsoft.edge.jpg)
+
+  - The user clicks on the correct answer and continues on to the next question
+    - ![image](testing-wireframes/testing_score.jpg)
 
   
 ## Future Additions to page
 
 - Mutiplayer function
 - Ability to go between quizes
+= Ability to compare your score to others that have played the game.
+= Add a timed component to the game.
 
 ## Testing User Stories from User Experience Section
 
 - _First time Visitor Goals_
 
   - _As a first time user of this site, I would like to be able to easily decifer the main purpose of the game_
-  -- 
-    - ![image]()
+  -- The instructions on the page quickly and easily explain how the game works and your choices that are above it are listed.
+
+    - ![image](testing-wireframes/testing_microsoft.edge.jpg)
 
   - _As a first time user, I would like to be able to easily navigate the game_
-  -- 
+  -- The buttons on the first page take you quickly and easily to the quiz of your choice. When you get to the quiz you click on the answer and are told if the question is right or wrong. 
 
-    - ![image]()
+    - ![image](testing-wireframes/testing_microsoft.edge.jpg)
 
   - _As a first time user, I would like to see my score_ 
-  -- 
+  -- The score is easily visable at the bottom of the quiz page.
 
-    - ![image]()
-
-  - _As a first time user, I would like to be able to locate the social media links for the company to determine how trusted and known they are._
-  -- 
-
-    - ![image]()
-
-  - _As a first time user, I would like to be able to look at Frequently Asked Questions and get some answers._
-  -- 
-
-    - ![image]()
-
+    - ![image](testing-wireframes/testing_score.jpg)
 
 - _Returning Visitor Goals:_ 
 
   - _As a returning visitor, I would like to be able to choose a different category of questions_
-  - - 
+  -- This is possible once you end the game. All you need to do is choose a different category of questions.
 
-     - ![image]()
+     - ![image](testing-wireframes/testing_brave.jpeg)
 
   - _As a returning visitor, I would like to be able to take the quiz again and possibly do better than the first time_ 
-  - - 
+  -- After completing the quiz you can easily retake the quiz and try and achieve a higher score.
 
-    - ![image]()
+    - ![image](testing-wireframes/testing_brave.jpeg)
 
 ## Further Testing
   - The Website was tested on: 
-    - _Google Chrome_
+    - _Microsoft Edge_
 
-      - ![image]()
+      - ![image](testing-wireframes/testing_microsoft.edge.jpg)
 
     - _Firefox_
 
-      - ![image]()
+      - ![image](testing-wireframes/testing_firefox.png)
 
     - _Brave browsers_
 
-      - ![image]()
+      - ![image](testing-wireframes/testing_brave.jpeg)
 
   - The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy Tablet and Samsung Galaxy 7, Samsung Galaxy 8, Samsung A12.
   - A large amount of testing was done to ensure that all of the pages were linking correctly. 
@@ -169,6 +164,7 @@ Alternatively, if you use Gitpod, you can [click here](https://gitpod.io/#https:
 
 ### Media
 _Images came from pixabay.com_
+_Icons used came from fontawesome_
 
 
 ### Acknowlegements
