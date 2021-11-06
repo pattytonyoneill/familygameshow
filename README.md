@@ -61,10 +61,10 @@
 
   - _Tablet_
 
-    - ![image]()
+    - ![image](testing-wireframes/testing_tablet.jpg)
   - _Cell Phone_
 
-    - ![image]()
+    - ![image](testing-wireframes/testing_chrome.jpg)
 
 - _Interactive Elements_
 
@@ -124,9 +124,13 @@
 
       - ![image](testing-wireframes/testing_firefox.png)
 
-    - _Brave browsers_
+    - _Brave browser_
 
       - ![image](testing-wireframes/testing_brave.jpeg)
+
+    - _Chrome browser_
+
+      - ![image](testing-wireframes/testing_chrome.jpg)
 
   - The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy Tablet and Samsung Galaxy 7, Samsung Galaxy 8, Samsung A12.
   - A large amount of testing was done to ensure that all of the pages were linking correctly. 
@@ -140,6 +144,7 @@
 - Difficulty getting questions to end after 10 questions. _First I had an endless line withe the last question over and over at end of quiz.  Next I got it to stop at 9 instead of 10. Finally I added code to bring the user back to the index.html page to be able to either retake the quiz or choose another quiz._
 - Questions don't end when the 10th question is asked _Wrote code to get the game to end after 10 questions and return the user to the page with the choice of type of game so they can replay or change game type._
 - Other games are not connected _This was done by connecting code and condensing my code_
+
 
 ## Deployment
 
