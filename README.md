@@ -20,7 +20,7 @@
 
 ## Frameworks, Libraries & Programs Used:
 
-- [Google Fonts](https://fonts.google.com/):_ 
+- [Google Fonts](https://fonts.google.com/): used to import Raleway into the style.css file which is used on all the pages of the project
 - [Font Awesome](https://fontawesome.com/): used to add buttons for choosing quiz type
 - [Git](https://git-scm.com): used to utilize the Gitpod terminal to commit to Git and Push to GitHub
 - [GitHub](https://github.com/): used to store project code after being pushed from Git

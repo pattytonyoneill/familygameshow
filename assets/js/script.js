@@ -35,24 +35,30 @@ document.addEventListener('DOMContentLoaded', function () {
 				} else {
 					window.location.href = 'index.html';
 				}
-				getPotterQuestions();
+				getNextQuestion();
 			} else {
 				//its incorrect
 				alert('Awwww...You got it wrong!');
 				incrementWrongAnswer();
 				if (gameQuestions.length > 0) {
-					getPotterQuestions();
+					getNextQuestion();
 				} else {
 					window.location.href = 'index.html';
 				}
 			}
 		});
 	});
-	runGame('potter');
+
+    runGame();
 });
 
 //run game based on game type chosen
-function runGame(gameType) {
+function runGame() {
+
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    gameType = params.category;
+    // gameType = 'potter'  // for testing only
 
     document.getElementById("potterQuestions");
     document.getElementById("marvelQuestions");
@@ -61,16 +67,16 @@ function runGame(gameType) {
 
     if (gameType === "potter") {
         gameQuestions= shuffleArray(potterQuestions);
-        getPotterQuestions();
+        getNextQuestion();
     } else if (gameType === "marvel") {
         gameQuestions= shuffleArray(marvelQuestions);
-        getMarvelQuestions();
+        getNextQuestion();
     } else if (gameType === "disney") {
         gameQuestions= shuffleArray(disneyQuestions);
-        getDisneyQuestions();
+        getNextQuestion();
     } else if (gameType === "trek") {
         gameQuestions= shuffleArray(trekQuestions);
-        getTrekQuestions();
+        getNextQuestion();
     } else {
         alert(`Unknown game type ${gameType}`);
         throw `Unknown game type ${gameType}, aborting!`;
@@ -100,7 +106,7 @@ function get_random(list) {
 }
 
 //**get quiz questions */
-function getPotterQuestions() {  
+function getNextQuestion() {  
     let rand = get_random(gameQuestions);
     console.log(rand);
     correctAnswer = rand.correctOption;
@@ -109,42 +115,6 @@ function getPotterQuestions() {
     document.getElementById("b").textContent = rand.b;
     document.getElementById("c").textContent = rand.c;
     document.getElementById("d").textContent = rand.d;
-}
-
-function getMarvelQuestions() {
-    let rand = get_random(gameQuestions);
-    console.log(rand);
-    correctAnswer = rand.correctOption;
-    document.getElementById("question").textContent = rand.question;
-    document.getElementById("a").textContent = rand.a;
-    document.getElementById("b").textContent = rand.b;
-    document.getElementById("c").textContent = rand.c;
-    document.getElementById("d").textContent = rand.d;
-    console.log(get_random(gameQuestions));
-}
-
-function getDisneyQuestions() {
-    let rand = get_random(gameQuestions);
-    console.log(rand);
-    correctAnswer = rand.correctOption;
-    document.getElementById("question").textContent = rand.question;
-    document.getElementById("a").textContent = rand.a;
-    document.getElementById("b").textContent = rand.b;
-    document.getElementById("c").textContent = rand.c;
-    document.getElementById("d").textContent = rand.d;
-    console.log(get_random(gameQuestions));
-}
-
-function getTrekQuestions() {
-    let rand = get_random(gameQuestions);
-    console.log(rand);
-    correctAnswer = rand.correctOption;
-    document.getElementById("question").textContent = rand.question;
-    document.getElementById("a").textContent = rand.a;
-    document.getElementById("b").textContent = rand.b;
-    document.getElementById("c").textContent = rand.c;
-    document.getElementById("d").textContent = rand.d;
-    console.log(get_random(gameQuestions));
 }
 
 //**questions */
