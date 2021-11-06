@@ -32,7 +32,11 @@
 - [Jshint](https://jshint.com/) Used to check that semicolons were present where needed.
 
 - _W3C Markup Validator Results_ 
-  - ![image]()
+  - This is the validator for the index.html.
+  - ![image](testing-wireframes/testing_index.html.png)
+
+  - This is the validator for the quiz.html.
+  - ![image](testing-wireframes/testing_quiz.html.png)
 
 - _Jigsaw Validator Results_
   - ![image](testing-wireframes/testing_css.png)
