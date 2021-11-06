@@ -8,9 +8,10 @@ body {
 /* --------- Paragraph */
 ul {
     color:darkslateblue ;
-    text-align: left;
+    text-align: center;
     font-size:  15px;
     margin-top: 65px;
+    list-style-type: none;
 }
 /* --------- Heading */
 

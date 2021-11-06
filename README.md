@@ -29,15 +29,13 @@
 - [ImageColorPicker](https://imagecolorpicker.com/en/user/shared-palette?id=308363078299288132): 
 - [Am I Responsive?](http://ami.responsivedesign.is/) Used on Readme to show how the application looks on different devices.
 - [Pixabay](https://pixabay.com/) Used for pictures for the background of the project. (not sure if I will be using them)
-
-- _Jshint_  
-  - ![image]()
+- [Jshint](https://jshint.com/) Used to check that semicolons were present where needed.
 
 - _W3C Markup Validator Results_ 
   - ![image]()
 
 - _Jigsaw Validator Results_
-  - ![image]()
+  - ![image](testing-wireframes/testing_css.png)
 
 - _Design:_
   - _Color Scheme:_ 

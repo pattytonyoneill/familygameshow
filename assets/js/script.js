@@ -3,7 +3,7 @@
 // get the correct option of the current question
 let correctAnswer = "";
 let gameQuestions=[ ];
-current_question_index = 0;
+
 
 //shuffle array of questions
 function shuffleArray(array) {
@@ -57,7 +57,8 @@ function runGame() {
 
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
-    gameType = params.category;
+    let gameType = params.category;
+    
     // gameType = 'potter'  // for testing only
 
     document.getElementById("potterQuestions");
@@ -98,8 +99,8 @@ function incrementWrongAnswer() {
 
 //gets a random questin and removes a question from list
 function get_random(list) {
-	list_index = Math.floor(Math.random() * list.length);
-	current_question = list[list_index];
+	let list_index = Math.floor(Math.random() * list.length);
+	let current_question = list[list_index];
 	gameQuestions.splice(list_index, 1);
 	console.log('ARRAY LENGTH, ', list.length);
 	return current_question;
