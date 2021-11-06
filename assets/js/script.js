@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	runGame('potter');
 });
 
-//run game based on type chosen
+//run game based on game type chosen
 function runGame(gameType) {
 
     document.getElementById("potterQuestions");
@@ -63,13 +63,13 @@ function runGame(gameType) {
         gameQuestions= shuffleArray(potterQuestions);
         getPotterQuestions();
     } else if (gameType === "marvel") {
-        gameQuestions= shuffleArray([...marvelQuestions]);
+        gameQuestions= shuffleArray(marvelQuestions);
         getMarvelQuestions();
     } else if (gameType === "disney") {
-        gameQuestions= shuffleArray([...disneyQuestions]);
+        gameQuestions= shuffleArray(disneyQuestions);
         getDisneyQuestions();
     } else if (gameType === "trek") {
-        gameQuestions= shuffleArray([...trekQuestions]);
+        gameQuestions= shuffleArray(trekQuestions);
         getTrekQuestions();
     } else {
         alert(`Unknown game type ${gameType}`);
