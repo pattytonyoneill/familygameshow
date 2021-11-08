@@ -28,8 +28,10 @@
 - [ColorSpace](https://mycolor.space) Used as a reference of colors that could be used.
 - [ImageColorPicker](https://imagecolorpicker.com/en/user/shared-palette?id=308363078299288132): 
 - [Am I Responsive?](http://ami.responsivedesign.is/) Used on Readme to show how the application looks on different devices.
-- [Pixabay](https://pixabay.com/) Used for pictures for the background of the project. (not sure if I will be using them)
-- [Jshint](https://jshint.com/) Used to check that semicolons were present where needed.
+
+- _Jshint_
+  -I am aware of the warning on line 58 and it is an acceptable warning.
+  -![image](testing-wireframes/testing_JShint.jpg)
 
 - _W3C Markup Validator Results_ 
   - This is the validator for the index.html.
@@ -43,10 +45,6 @@
 
 - _Typography:_
   - Raleway is the font used in this website san-serif is the backup in case one of the font does not import correctly. 
-
-- _Imagery:_
-
-  - background photo at []
 
 - _Balsamiq Wireframes:_
 
