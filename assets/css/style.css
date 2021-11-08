@@ -65,12 +65,12 @@ ul {
 
 .controls-area1 {
     width: 85%;
-    margin: 30px auto;
+    margin: 3px auto;
 }
 
 .controls-area2 {
     width: 85%;
-    margin: 30px auto;
+    margin: 3px auto;
 }
 
 #score {
@@ -131,9 +131,8 @@ ul {
 .btn--blue {
     border-color: blue;
     color: blue;
-    width: 100px;
-    padding: 4px;
-    margin: 10px;
+    display: inline-block;
+    border-radius: 50%;
 }
 
 .btn--blue:active,
@@ -145,6 +144,8 @@ ul {
 .btn--orange {
     border-color: orange;
     color: orange;
+    display: inline-block;
+    border-radius: 50%;
 }
 
 .btn--orange:active,
@@ -156,6 +157,8 @@ ul {
 .btn--red {
     border-color: red;
     color: red;
+    display: inline-block;
+    border-radius: 50%;
 }
 
 .btn--red:active,
@@ -167,6 +170,8 @@ ul {
 .btn--green {
     border-color: green;
     color: green;
+    display: inline-block;
+    border-radius: 50%;
 }
 
 .btn--green:active,
@@ -255,19 +260,20 @@ ul {
     }
     ul {
         font-size: 8.5px;
+        margin-top: 2%;
     }
     .game-area {
         height: 50vh;
     }
 
     .controls-area1 {
-        width: 100%;
-        margin: 25px auto;
+        width: 75%;
+        margin: 1px auto;
     }
 
     .controls-area2 {
         width: 75%;
-        margin: 20px auto;
+        margin: 1px auto;
     }
 
     .btn--big {
