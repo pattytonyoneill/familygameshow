@@ -142,7 +142,7 @@
 - Difficulty getting questions to end after 10 questions. _First I had an endless line withe the last question over and over at end of quiz.  Next I got it to stop at 9 instead of 10. Finally I added code to bring the user back to the index.html page to be able to either retake the quiz or choose another quiz._
 - Questions don't end when the 10th question is asked _Wrote code to get the game to end after 10 questions and return the user to the page with the choice of type of game so they can replay or change game type._
 - Other games are not connected _This was done by connecting code and condensing my code_
-
+- Buttons needed to be rounded. _I corrected this by editing the css style code_
 
 ## Deployment
 
