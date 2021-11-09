@@ -20,7 +20,7 @@
 
 ## Frameworks, Libraries & Programs Used:
 
-- [Google Fonts](https://fonts.google.com/): used to import Raleway into the style.css file which is used on all the pages of the project
+- [Google Fonts](https://fonts.google.com/): used to import Raleway and Mochiy Pop P One, and into the style.css file which was used on the project
 - [Font Awesome](https://fontawesome.com/): used to add buttons for choosing quiz type
 - [Git](https://git-scm.com): used to utilize the Gitpod terminal to commit to Git and Push to GitHub
 - [GitHub](https://github.com/): used to store project code after being pushed from Git
@@ -110,7 +110,7 @@
   - _As a returning visitor, I would like to be able to take the quiz again and possibly do better than the first time_ 
   - - After completing the quiz you can easily retake the quiz and try and achieve a higher score.
 
-    - - ![image](testing-wireframes/testing_microsoft.edge.jpg)
+    - - ![image](testing_microsoft.edge.jpg)
 
 ## Further Testing
   - The Website was tested on: 
