@@ -128,7 +128,7 @@
 
     - _Chrome browser_
 
-      - ![image](testing-wireframes/testing_chrome.jpg)
+      - ![image](testing-wireframes/testing_tablet.jpg)
 
   - The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy Tablet and Samsung Galaxy 7, Samsung Galaxy 8, Samsung A12.
   - A large amount of testing was done to ensure that all of the pages were linking correctly. 
