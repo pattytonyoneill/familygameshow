@@ -1,6 +1,6 @@
 body { 
     background-color: lightblue;
-    font-family: "Raleway", sans-serif;
+    font-family: "Mochiy Pop P One", sans-serif;
     color: #4f4461;
     text-align: center;
 }
@@ -10,7 +10,7 @@ ul {
     color:darkslateblue ;
     text-align: center;
     font-size:  15px;
-    margin-top: 65px;
+    margin-top: 15px;
     list-style-type: none;
 }
 /* --------- Heading */
@@ -27,7 +27,7 @@ ul {
     background-color: #E6ECF0;
     box-sizing: border-box;
     width: 85%;
-    height: 65vh;
+    height: 75vh;
     max-height: 450px;
     max-width: 1020px;
     margin-left: auto;
@@ -98,7 +98,7 @@ ul {
 .btn {
     width: 220px;
     height: 60px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Mochiy Pop P One", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
     color: white;
@@ -260,10 +260,15 @@ ul {
     }
     ul {
         font-size: 8.5px;
-        margin-top: 2%;
+        
+        margin-right: 10px;
+    }
+    .btn {
+        width: 40px;
+        height: 30px;
     }
     .game-area {
-        height: 50vh;
+        height: 70vh;
     }
 
     .controls-area1 {
