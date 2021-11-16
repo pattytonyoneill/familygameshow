@@ -7,14 +7,14 @@ body {
 
 /* --------- Paragraph */
 ul {
-    color:darkslateblue ;
+    color: darkslateblue;
     text-align: center;
-    font-size:  15px;
+    font-size: 15px;
     margin-top: 15px;
     list-style-type: none;
 }
-/* --------- Heading */
 
+/* --------- Heading */
 .heading {
     color: black;
     text-align: center;
@@ -22,7 +22,6 @@ ul {
 }
 
 /* --------- Game layout */
-
 .game-area {
     background-color: #E6ECF0;
     box-sizing: border-box;
@@ -94,7 +93,6 @@ ul {
 }
 
 /* --------- Buttons */
-
 .btn {
     width: 220px;
     height: 60px;
@@ -121,11 +119,11 @@ ul {
 }
 
 .btn--big::after {
-	content: attr(data-type);
-	font-size: 1rem;
-	color: #445361;
-	position: relative;
-	left: -0.5em;
+    content: attr(data-type);
+    font-size: 1rem;
+    color: #445361;
+    position: relative;
+    left: -0.5em;
 }
 
 .btn--blue {
@@ -193,7 +191,6 @@ ul {
 }
 
 /* --------- Media queries */
-
 @media (max-width: 414px) {
     .controls-area1 {
         width: 100%;
@@ -258,15 +255,18 @@ ul {
     .heading {
         font-size: 10px;
     }
+
     ul {
         font-size: 8.5px;
         
         margin-right: 10px;
     }
+
     .btn {
         width: 40px;
         height: 30px;
     }
+
     .game-area {
         height: 60vh;
     }
@@ -284,15 +284,17 @@ ul {
     .btn--big {
         margin: 10px 10px;
     }
+
     .question-area {
         padding: 10px 0;
         font-size: 20px;
     }
+
     .scores {
         font-size: 20px;
     }
+
     .score-area {
         font-size: 20px;
     }
-
 }
