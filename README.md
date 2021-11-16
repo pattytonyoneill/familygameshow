@@ -1,6 +1,6 @@
 # Family Game Show
-![image](assets/images/responsive1.jpg)
-![image](assets/images/responsive2.jpg)
+![image](documentation/testing/responsive1.jpg)
+![image](documentation/testing/responsive2.jpg)
 
 ## User Stories:
 - _First time Visitor Goals_
@@ -31,47 +31,47 @@
 
 - _Jshint_
   -I am aware of the warning on line 58 and it is an acceptable warning.
-  -![image](testing-wireframes/testing_JShint.jpg)
+  -![image](documentation/testing/testing_jshint.jpg)
 
 - _W3C Markup Validator Results_ 
   - This is the validator for the index.html.
-  - ![image](testing-wireframes/testing_index.html.png)
+  - ![image](documentation/testing/testing_index_html.png)
 
   - This is the validator for the quiz.html.
-  - ![image](testing-wireframes/testing_quiz.html.png)
+  - ![image](documentation/testing/testing_quiz_html.png)
 
 - _Jigsaw Validator Results_
-  - ![image](testing-wireframes/testing_css.png)
+  - ![image](documentation/testing/testing_css.png)
 
 - _Typography:_
   - Raleway is the font used in this website san-serif is the backup in case one of the font does not import correctly. 
 
 - _Balsamiq Wireframes:_
 
-  - Wireframes at [this link](testing-wireframes/family-game-night.pdf)
+  - Wireframes at [this link](documentation/wireframes/family-game-night.pdf)
 ## Features:
 
 - _Responsive on all device sizes_
 
   - _Desktop_
 
-    - ![image](testing-wireframes/testing_brave.jpeg)
+    - ![image](documentation/testing/testing_brave.jpeg)
 
   - _Tablet_
 
-    - ![image](testing-wireframes/testing_tablet.jpg)
+    - ![image](documentation/testing/testing_tablet.jpg)
   - _Cell Phone_
 
-    - ![image](testing-wireframes/testing_chrome.jpg)
+    - ![image](documentation/testing/testing_chrome.jpg)
 
 - _Interactive Elements_
 
   -  The buttons on this page make it possible to easily navigate to the game that the user wishes to play. 
 
-    - ![image](testing-wireframes/testing_microsoft.edge.jpg)
+    - ![image](documentation/testing/testing_microsoft_edge.jpg)
 
   - The user clicks on the correct answer and continues on to the next question
-    - ![image](testing-wireframes/testing_score.jpg)
+    - ![image](documentation/testing/testing_score.jpg)
 
   
 ## Future Additions to page
@@ -88,47 +88,47 @@
   - _As a first time user of this site, I would like to be able to easily decifer the main purpose of the game_
   - - The instructions on the page quickly and easily explain how the game works and your choices that are above it are listed.
 
-    - ![image](testing-wireframes/testing_microsoft.edge.jpg)
+    - ![image](documentation/testing/testing_microsoft_edge.jpg)
 
   - _As a first time user, I would like to be able to easily navigate the game_
   - - The buttons on the first page take you quickly and easily to the quiz of your choice. When you get to the quiz you click on the answer and are told if the question is right or wrong. 
 
-    - ![image](testing-wireframes/testing_microsoft.edge.jpg)
+    - ![image](documentation/testing/testing_microsoft_edge.jpg)
 
   - _As a first time user, I would like to see my score_ 
   - - The score is easily visable at the bottom of the quiz page.
 
-    - ![image](testing-wireframes/testing_score.jpg)
+    - ![image](documentation/testing/testing_score.jpg)
 
 - _Returning Visitor Goals:_ 
 
   - _As a returning visitor, I would like to be able to choose a different category of questions_
   - - This is possible once you end the game. All you need to do is choose a different category of questions.
 
-     - ![image](testing-wireframes/testing_brave.jpeg)
+     - ![image](documentation/testing/testing_brave.jpeg)
 
   - _As a returning visitor, I would like to be able to take the quiz again and possibly do better than the first time_ 
   - - After completing the quiz you can easily retake the quiz and try and achieve a higher score.
 
-    - - ![image](testing_microsoft.edge.jpg)
+    - - ![image](documentation/testing/testing_microsoft_edge.jpg)
 
 ## Further Testing
   - The Website was tested on: 
     - _Microsoft Edge_
 
-      - ![image](testing-wireframes/testing_microsoft.edge.jpg)
+      - ![image](documentation/testing/testing_microsoft_edge.jpg)
 
     - _Firefox_
 
-      - ![image](testing-wireframes/testing_firefox.png)
+      - ![image](documentation/testing/testing_firefox.png)
 
     - _Brave browser_
 
-      - ![image](testing-wireframes/testing_brave.jpeg)
+      - ![image](documentation/testing/testing_brave.jpeg)
 
     - _Chrome browser_
 
-      - ![image](testing-wireframes/testing_tablet.jpg)
+      - ![image](documentation/testing/testing_tablet.jpg)
 
   - The website was viewed on a variety of devices such as Desktop, Laptop, Samsung Galaxy Tablet and Samsung Galaxy 7, Samsung Galaxy 8, Samsung A12.
   - A large amount of testing was done to ensure that all of the pages were linking correctly. 
