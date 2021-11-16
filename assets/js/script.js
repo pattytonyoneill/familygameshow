@@ -102,14 +102,14 @@ function get_random(list) {
 	let list_index = Math.floor(Math.random() * list.length);
 	let current_question = list[list_index];
 	gameQuestions.splice(list_index, 1);
-	console.log('ARRAY LENGTH, ', list.length);
+	
 	return current_question;
 }
 
 //**get quiz questions */
 function getNextQuestion() {  
     let rand = get_random(gameQuestions);
-    console.log(rand);
+    
     correctAnswer = rand.correctOption;
     document.getElementById("question").textContent = rand.question;
     document.getElementById("a").textContent = rand.a;
